@@ -1,0 +1,7 @@
+$texte:black;
+
+@mixin local {
+    display: flex;
+    justify-content: space-between;
+    background-color: $texte;
+}
