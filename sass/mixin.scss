@@ -1,7 +1,13 @@
-$texte:black;
 
 @mixin local {
     display: flex;
-    justify-content: space-between;
-    background-color: $texte;
+    align-items: center;
 }
+@mixin centre{
+    justify-content: center;
+}
+@mixin center{
+    text-align: center;
+}
+@mixin wrap{
+display: flex; flex-wrap: wrap;}
