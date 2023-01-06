@@ -11,7 +11,9 @@
 }
 @mixin wrap{
 display: flex; flex-wrap: wrap;}
-
+@mixin paddingmenu{
+    padding-top:50px ;
+}
 //Breakpoint
 @mixin tablette{
     @media only screen and (min-width: 768px) {

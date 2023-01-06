@@ -1,0 +1,16 @@
+@use "../utils/mixin.scss" as mix;
+@use "../utils/variables.scss" as v;
+@import "../layout/header";
+@import "../layout/footer";
+@import "../layout/menu";
+
+
+  body {
+    font-family: 'Roboto', sans-serif;
+        margin: 0px !important ;
+  }
+
+  .container{
+    margin: 0px auto;
+    padding: 0;
+  }

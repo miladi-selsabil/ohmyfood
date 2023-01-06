@@ -1,0 +1,95 @@
+@use "../utils/mixin.scss" as mix;
+@use "../utils/variables.scss" as v;
+
+
+.main{border-radius: 30px 30px 0px 0px;
+    background: #F5F5F5;
+    position: relative;
+    bottom: 57px;
+  }
+    .food-française{
+      width: 100%;
+    }
+    .mil{
+      @include mix.local;
+      justify-content: space-around;
+      @include mix.tablette{
+        font-size: 48px;
+      }
+      @include mix.desktop{
+        font-size: 48px;
+      }
+    }
+    .entrees{
+      @include mix.desktop{
+        display: flex; justify-content: space-around;
+      }
+      @include mix.desktop{
+        @include mix.paddingmenu;
+        display: flex; justify-content: space-around;
+
+      }
+      }
+
+      .plats{
+
+        @include mix.desktop{
+          display: flex; justify-content: space-around;
+        }
+        @include mix.desktop{
+          @include mix.paddingmenu;
+          display: flex; justify-content: space-around;
+  
+        }
+        
+      }
+      .desserts{
+        @include mix.desktop{
+          display: flex; justify-content: space-around;
+        }
+        @include mix.desktop{
+          @include mix.paddingmenu;
+          display: flex; justify-content: space-around;
+  
+        }
+        
+      }
+    .mil h2{font-family: 'Shrikhand', cursive; 
+      font-style: italic;
+      @include mix.tablette{
+        font-size: 30px;
+        
+        }
+        @include mix.desktop{
+          font-size: 48px;
+  
+        }
+    }
+    .ent-alfr{
+      @include mix.local;
+      justify-content: space-between;
+      background: white;
+      border-radius: 13px;
+      padding: 3px;
+      width: 90%;
+      font-size: 15px;
+      margin-top: 27px;
+      box-shadow: 0px 1px 9px grey;
+     
+    }
+     .entrees-fr{text-decoration: underline v.$tertiaire 25%; margin-bottom: 0px;
+      padding: 13px 19px;
+      @include mix.tablette{
+        font-size: 20px;
+        
+        }
+        @include mix.desktop{
+          font-size: 30px;
+  
+        }
+    }
+    .ent-alfr:nth-child(1){margin: 0px;}
+    .ent-alfr .nom-entree, .ingredients{margin: 0px;}
+    .ent-alfr .nom-entree{font-weight: 500;}
+    .ent-alfr .prix{font-weight: 500;}
+    .ent-alfr .ingredients{font-weight: 100;}
