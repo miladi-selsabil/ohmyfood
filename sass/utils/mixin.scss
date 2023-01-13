@@ -9,6 +9,17 @@
 @mixin center{
     text-align: center;
 }
+@mixin between{
+    
+    justify-content: space-between;
+}
+@mixin around{
+    display: flex;
+    justify-content: space-around;
+
+}
+@mixin absolute{position: absolute;}
+@mixin size{font-size: 30px;}
 @mixin wrap{
 display: flex; flex-wrap: wrap;}
 @mixin paddingmenu{

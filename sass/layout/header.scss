@@ -1,4 +1,7 @@
-h1{text-align: center;}
+
+@use "../utils/mixin.scss" as mix;
+@use "../utils/variables.scss" as v;
+h1{   @include mix.center;}
 
 h1 img{
   width: 200px;

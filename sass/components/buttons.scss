@@ -1,0 +1,30 @@
+@use "../utils/mixin.scss" as mix;
+@use "../utils/variables.scss" as v;
+
+.nos-restaurants{
+    background: linear-gradient(v.$primaire, v.$secondaire  );
+    padding: 15px;
+    border-radius: 35px;
+    margin: 20px;
+    border-color: #F5F5F5;
+    border: 1px;
+    box-shadow: 0px 1px 6px grey;
+    @include mix.desktop{
+      padding: 20px 36px;
+    }
+  }
+  button a{
+  text-decoration: none;
+  color: white;
+  @include mix.tablette{
+    font-size: 20px;
+    
+  }
+  @include mix.desktop{
+      font-size: 24px;
+    
+    }
+  }
+  .nos-restaurants:hover{
+   opacity: 0.6;
+  }

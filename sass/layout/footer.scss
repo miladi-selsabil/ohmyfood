@@ -11,51 +11,56 @@ footer{
     font-style: italic;
     font-size: 25px; 
     padding-left: 25px;
+    padding-bottom: 15px;
     margin: 0px;
      @include mix.tablette{
         @include mix.center;
     }
     @include mix.desktop{
         @include mix.center;
+        @include mix.size;
+
     }
     }
   footer .footer{
     margin-left: 25px;
     flex-direction: column;
     @include mix.tablette{
-      display: flex;
-      justify-content: space-around;
+      @include mix.around;
       padding-top: 15px;
       flex-direction: initial;
     }
     
     @include mix.desktop{
-      display: flex;
-      justify-content: space-around;
+      @include mix.around;
       padding-top: 15px;
       flex-direction: initial;
     }
   }
   footer .footer .footer-food{
     @include  mix.local;
-    font-size: 15px;
   }
   footer .footer .footer-food .txt-footer{
     margin: 0px;
     padding-left: 15px;
-    padding-top: 10px;
   }
   .txt-footer{
-    font-size: 15px;
+    font-size: 16px;
     margin: 0px;
-    padding-top: 10px;
     @include mix.tablette{
       font-size: 20px;
       
     }
     @include mix.desktop{
-        font-size: 20px;
+        font-size: 25px;
       
       }
-  
+      
+  }
+  i{
+    
+    font-size: 16px;
+    @include mix.desktop{
+      font-size: 25px;
+    }
   }
