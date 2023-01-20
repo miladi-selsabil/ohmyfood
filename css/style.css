@@ -759,6 +759,17 @@ button a {
     font-size: 40px;
   }
 }
+@media only screen and (min-width: 992px) {
+  main {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .choix-fonct {
+    width: 30%;
+    margin-top: 73px;
+  }
+}
 .fonc-resto {
   flex-direction: column;
   display: flex;
@@ -767,10 +778,7 @@ button a {
 
 @media only screen and (min-width: 992px) {
   .fonc-resto {
-    display: flex;
-    justify-content: space-around;
     /* width: 20%;*/
-    flex-direction: row;
   }
 }
 .fonc-resto .fonctionnement {
@@ -793,7 +801,8 @@ button a {
 }
 @media only screen and (min-width: 992px) {
   .fonc-resto .fonctionnement {
-    width: 25%;
+    width: 70%;
+    margin-top: 70px;
   }
 }
 .fonc-resto .fonctionnement .choix {
@@ -809,7 +818,7 @@ button a {
 }
 @media only screen and (min-width: 992px) {
   .fonc-resto .fonctionnement .choix {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 .fonc-resto .fonctionnement .number {
@@ -826,15 +835,32 @@ button a {
 
 @media only screen and (min-width: 992px) {
   .fonc-resto .fonctionnement .number {
-    font-size: 17px;
-    width: 30px;
-    height: 30px;
+    font-size: 22px;
+    width: 51px;
+    padding-top: 11px;
+    height: 40px;
+    left: -33px;
   }
 }
 .fonc-resto .fonctionnement i {
   margin-left: 35px;
   color: gray;
   font-size: 22px;
+}
+
+@media only screen and (min-width: 992px) {
+  .fonc-resto .fonctionnement i {
+    font-size: 30px;
+    margin-left: 60px;
+  }
+}
+.fonc-resto .fonctionnement :hover {
+  color: #9356DC;
+}
+
+.fonc-resto :hover {
+  background: #9356DC;
+  cursor: pointer;
 }
 
 h3 {
@@ -864,6 +890,11 @@ h3 {
   padding-top: 20px;
 }
 
+@media only screen and (min-width: 992px) {
+  .restaurants {
+    width: 70%;
+  }
+}
 .restaurants .artic-resto {
   display: flex;
   align-items: center;
@@ -895,6 +926,11 @@ h3 {
     font-size: 40px;
   }
 }
+.restaurants .artic-resto .txt-txt :hover::before {
+  background: linear-gradient(#9356DC, #FF79DA);
+  cursor: pointer;
+}
+
 .restaurants .artic-resto .txt-txt .nom-restau {
   padding-left: 20px;
   font-weight: bold;
@@ -979,7 +1015,12 @@ h3 {
 }
 @media only screen and (min-width: 992px) {
   .restaurants .artic-resto .resto .img-resto {
-    height: 967px;
+    height: 600px;
+    width: 98%;
+    margin: auto;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
   }
 }
 

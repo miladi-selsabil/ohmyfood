@@ -1,17 +1,26 @@
 @use "../utils/mixin.scss" as mix;
 @use "../utils/variables.scss" as v;
 
- 
+ main{
+  @include mix.desktop{
+    display: flex;
+  }
+ }
+ .choix-fonct{
+  @include mix.desktop{
+  width: 30%;
+  margin-top: 73px;
+  }
+}
 .fonc-resto{
     flex-direction: column;
     @include mix.local;
     
     @include mix.desktop{
-      @include mix.around;
      /* width: 20%;*/
-      flex-direction: row;
 
     }
+  
     .fonctionnement{
       @include  mix.local;
         background: #F5F5F5;
@@ -22,12 +31,15 @@
         font-size: 20px;
         position: relative;
         margin-top: 30px;
+        
         @include mix.tablette{
           width: 70%;
           
         }
         @include mix.desktop{
-          width: 25%;
+          width: 70%;
+          margin-top: 70px;
+
         }
          .choix{
           padding-left: 26px;
@@ -38,7 +50,7 @@
             
             }
             @include mix.desktop{
-              font-size: 24px;
+            @include mix.size;
       
             }
         }
@@ -53,19 +65,29 @@
             @include mix.absolute;
             left: -14px;
             @include mix.desktop{
-              font-size: 17px;
-              width: 30px;
-              height: 30px;
+              font-size: 22px;
+              width: 51px;
+              padding-top: 11px;
+              height: 40px;
+              left: -33px;
+
             }
         }
         i{
           margin-left: 35px;
           color:gray;
           font-size: 22px;
-        }
+          @include mix.desktop{
+          @include mix.size;
+          margin-left: 60px;
+          }
+        }:hover{color: v.$primaire;}
+    }:hover{
+      background: v.$primaire;
+      cursor: pointer;
     }
   }
-
+ 
   h3{
     margin-left: 20px;
     margin-top: 50px;
@@ -88,7 +110,9 @@
     background-color: #F5F5F5;
     margin-top: 73px;
     padding-top: 20px;
- 
+    @include mix.desktop{
+      width: 70%;
+    }
    
 .artic-resto{ 
   @include  mix.local;
@@ -112,7 +136,7 @@
       @include mix.desktop{
         font-size: 40px;
       }
-  }
+  }:hover::before{background: linear-gradient(#9356DC, #FF79DA); cursor: pointer;}
      .nom-restau{
     padding-left: 20px;
     font-weight: bold;
@@ -181,8 +205,13 @@
             
           }
           @include mix.desktop{
-              height: 967px;
-            
+              height: 600px;
+              width: 98%;
+              margin: auto;
+              /* text-align: center; */
+              display: flex;
+              align-items: center;
+                      
             }
     }
   }
