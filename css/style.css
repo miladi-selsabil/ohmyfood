@@ -49,8 +49,8 @@ footer {
 
 footer h4 {
   font-family: "Shrikhand", cursive;
-  font-style: italic;
-  font-size: 25px;
+  font-weight: 100;
+  font-size: 20px;
   padding-left: 25px;
   padding-bottom: 15px;
   margin: 0px;
@@ -63,7 +63,7 @@ footer h4 {
 @media only screen and (min-width: 992px) {
   footer h4 {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -99,6 +99,7 @@ footer .footer .footer-food .txt-footer {
 }
 
 .txt-footer {
+  padding: 5px;
   font-size: 16px;
   margin: 0px;
 }
@@ -132,6 +133,11 @@ i {
   width: 100%;
   top: -75px;
 }
+@media only screen and (min-width: 992px) {
+  .ol .carte {
+    position: relative;
+  }
+}
 
 .food-française {
   width: 100%;
@@ -155,13 +161,31 @@ i {
   }
 }
 
+.repas {
+  display: flex;
+  align-items: center;
+  background: #F5F5F5;
+  border-radius: 24px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .repas {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: initial;
+  }
+}
+
 .mil h2 {
   font-family: "Shrikhand", cursive;
-  font-size: 30px;
+  font-size: 20px;
 }
 @media only screen and (min-width: 768px) {
   .mil h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -175,7 +199,7 @@ i.far.fa-heart {
 }
 @media only screen and (min-width: 768px) {
   i.far.fa-heart {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -217,7 +241,7 @@ i.far.fa-heart {
 }
 @media only screen and (min-width: 992px) {
   .entrees-fr {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
 }
@@ -234,7 +258,7 @@ i.far.fa-heart {
 }
 @media only screen and (min-width: 992px) {
   .entres-fr {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
 }
@@ -245,6 +269,7 @@ i.far.fa-heart {
 
 .ent-alfr .nom-entree, .ingredients {
   margin: 0px;
+  font-size: 20px;
 }
 
 .ent-alfr .nom-entree {
@@ -252,7 +277,7 @@ i.far.fa-heart {
 }
 @media only screen and (min-width: 992px) {
   .ent-alfr .nom-entree {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -261,7 +286,7 @@ i.far.fa-heart {
 }
 @media only screen and (min-width: 992px) {
   .ent-alfr .prix {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -270,7 +295,7 @@ i.far.fa-heart {
 }
 @media only screen and (min-width: 992px) {
   .ent-alfr .ingredients {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -300,8 +325,8 @@ footer {
 
 footer h4 {
   font-family: "Shrikhand", cursive;
-  font-style: italic;
-  font-size: 25px;
+  font-weight: 100;
+  font-size: 20px;
   padding-left: 25px;
   padding-bottom: 15px;
   margin: 0px;
@@ -315,7 +340,7 @@ footer h4 {
 @media only screen and (min-width: 992px) {
   footer h4 {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 footer .footer {
@@ -350,6 +375,7 @@ footer .footer .footer-food .txt-footer {
 }
 
 .txt-footer {
+  padding: 5px;
   font-size: 16px;
   margin: 0px;
 }
@@ -385,6 +411,11 @@ i {
   top: -75px;
 }
 
+@media only screen and (min-width: 992px) {
+  .ol .carte {
+    position: relative;
+  }
+}
 .food-française {
   width: 100%;
 }
@@ -407,14 +438,32 @@ i {
     padding: 0px 90px;
   }
 }
+.repas {
+  display: flex;
+  align-items: center;
+  background: #F5F5F5;
+  border-radius: 24px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .repas {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: initial;
+  }
+}
 .mil h2 {
   font-family: "Shrikhand", cursive;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .mil h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -428,7 +477,7 @@ i.far.fa-heart {
 
 @media only screen and (min-width: 768px) {
   i.far.fa-heart {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -470,7 +519,7 @@ i.far.fa-heart {
 }
 @media only screen and (min-width: 992px) {
   .entrees-fr {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
 }
@@ -487,7 +536,7 @@ i.far.fa-heart {
 }
 @media only screen and (min-width: 992px) {
   .entres-fr {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
 }
@@ -497,6 +546,7 @@ i.far.fa-heart {
 
 .ent-alfr .nom-entree, .ingredients {
   margin: 0px;
+  font-size: 20px;
 }
 
 .ent-alfr .nom-entree {
@@ -505,7 +555,7 @@ i.far.fa-heart {
 
 @media only screen and (min-width: 992px) {
   .ent-alfr .nom-entree {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .ent-alfr .prix {
@@ -514,7 +564,7 @@ i.far.fa-heart {
 
 @media only screen and (min-width: 992px) {
   .ent-alfr .prix {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 .ent-alfr .ingredients {
@@ -523,7 +573,7 @@ i.far.fa-heart {
 
 @media only screen and (min-width: 992px) {
   .ent-alfr .ingredients {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 .nos-restaurants {
@@ -586,8 +636,8 @@ footer {
 
 footer h4 {
   font-family: "Shrikhand", cursive;
-  font-style: italic;
-  font-size: 25px;
+  font-weight: 100;
+  font-size: 20px;
   padding-left: 25px;
   padding-bottom: 15px;
   margin: 0px;
@@ -601,7 +651,7 @@ footer h4 {
 @media only screen and (min-width: 992px) {
   footer h4 {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 footer .footer {
@@ -636,6 +686,7 @@ footer .footer .footer-food .txt-footer {
 }
 
 .txt-footer {
+  padding: 5px;
   font-size: 16px;
   margin: 0px;
 }
@@ -706,22 +757,22 @@ button a {
 
 @media only screen and (min-width: 768px) {
   .position {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
   .position {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 768px) {
   h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
   h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .reservation {
@@ -743,7 +794,7 @@ button a {
 }
 @media only screen and (min-width: 992px) {
   .reservation .rese-texte {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .reservation h2 {
@@ -760,7 +811,7 @@ button a {
   }
 }
 @media only screen and (min-width: 992px) {
-  main {
+  .main {
     display: flex;
   }
 }
@@ -818,7 +869,7 @@ button a {
 }
 @media only screen and (min-width: 992px) {
   .fonc-resto .fonctionnement .choix {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .fonc-resto .fonctionnement .number {
@@ -835,10 +886,10 @@ button a {
 
 @media only screen and (min-width: 992px) {
   .fonc-resto .fonctionnement .number {
-    font-size: 22px;
-    width: 51px;
-    padding-top: 11px;
-    height: 40px;
+    font-size: 20px;
+    width: 34px;
+    padding-top: 5px;
+    height: 30px;
     left: -33px;
   }
 }
@@ -850,16 +901,17 @@ button a {
 
 @media only screen and (min-width: 992px) {
   .fonc-resto .fonctionnement i {
-    font-size: 30px;
-    margin-left: 60px;
+    font-size: 20px;
   }
 }
 .fonc-resto .fonctionnement :hover {
   color: #9356DC;
+  opacity: 1;
 }
 
 .fonc-resto :hover {
   background: #9356DC;
+  opacity: 0.6;
   cursor: pointer;
 }
 
@@ -867,12 +919,12 @@ h3 {
   margin-left: 20px;
   margin-top: 50px;
   margin-bottom: 0px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   h3 {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
 }
@@ -893,6 +945,7 @@ h3 {
 @media only screen and (min-width: 992px) {
   .restaurants {
     width: 70%;
+    padding-top: 0px;
   }
 }
 .restaurants .artic-resto {
@@ -918,12 +971,12 @@ h3 {
 
 .restaurants .artic-resto .txt-txt .fa-heart {
   padding-right: 20px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 992px) {
   .restaurants .artic-resto .txt-txt .fa-heart {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 .restaurants .artic-resto .txt-txt :hover::before {
@@ -945,20 +998,15 @@ h3 {
 }
 @media only screen and (min-width: 992px) {
   .restaurants .artic-resto .txt-txt .nom-restau {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .restaurants .artic-resto .txt-txt .adresse {
   padding-left: 20px;
-  font-size: 23px;
+  font-size: 20px;
   margin-top: 0px;
 }
 
-@media only screen and (min-width: 992px) {
-  .restaurants .artic-resto .txt-txt .adresse {
-    font-size: 25px;
-  }
-}
 .restaurants .artic-resto .resto {
   position: relative;
   width: 90%;
@@ -974,7 +1022,7 @@ h3 {
 }
 @media only screen and (min-width: 992px) {
   .restaurants .artic-resto .resto {
-    width: 40%;
+    width: 45%;
   }
 }
 .restaurants .artic-resto .resto .nouveau {
@@ -997,8 +1045,8 @@ h3 {
 @media only screen and (min-width: 992px) {
   .restaurants .artic-resto .resto .nouveau {
     position: absolute;
-    left: 70%;
-    font-size: 27px;
+    left: 60%;
+    font-size: 20px;
     top: 34px;
   }
 }
@@ -1015,8 +1063,7 @@ h3 {
 }
 @media only screen and (min-width: 992px) {
   .restaurants .artic-resto .resto .img-resto {
-    height: 600px;
-    width: 98%;
+    width: 99%;
     margin: auto;
     /* text-align: center; */
     display: flex;

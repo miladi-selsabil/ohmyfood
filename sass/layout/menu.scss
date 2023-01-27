@@ -11,6 +11,8 @@
     @include mix.absolute;
     width: 100%;
     top: -75px;
+    @include mix.desktop{position: relative;}
+    
   }
 }
     .food-française{
@@ -27,7 +29,22 @@
         font-size: 48px;
         padding: 0px 90px;
       }
-    }
+    } .repas{
+      @include  mix.local;
+        background: #F5F5F5;
+        border-radius: 24px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-top: 30px;
+        @include mix.tablette{
+          
+        }
+        @include mix.desktop{
+          @include mix.around;
+          flex-direction: initial;
+
+        }}
       
     .mil h2{font-family: 'Shrikhand', cursive; 
       
@@ -93,7 +110,7 @@
     
     }
     .ent-alfr:nth-child(1){margin-top: 12px;}
-    .ent-alfr .nom-entree, .ingredients{margin: 0px;}
+    .ent-alfr .nom-entree, .ingredients{margin: 0px; @include mix.size; }
     .ent-alfr .nom-entree{font-weight: bold;
       @include mix.desktop{
         @include mix.size;
@@ -102,10 +119,12 @@
     .ent-alfr .prix{
       font-weight: bold;
       @include mix.desktop{
-      font-size: 24px;}
+      @include mix.size;
+    }
     }
     .ent-alfr .ingredients{font-weight: 100;
       @include mix.desktop{
-        font-size: 25px;
+        @include mix.size;
+
       }
     }
