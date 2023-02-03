@@ -7,11 +7,16 @@
   border-color: #F5F5F5;
   border: 1px;
   box-shadow: 0px 1px 6px grey;
+  transition: transform 400ms;
 }
 @media only screen and (min-width: 992px) {
   .nos-restaurants {
     padding: 20px 36px;
   }
+}
+.nos-restaurants:hover {
+  opacity: 0.6;
+  transform: scale(1.15);
 }
 
 button a {
@@ -27,10 +32,6 @@ button a {
   button a {
     font-size: 24px;
   }
-}
-
-.nos-restaurants:hover {
-  opacity: 0.6;
 }
 
 h1 {
@@ -123,45 +124,88 @@ i {
   }
 }
 
-.ol {
+.food-française {
+  width: 100%;
+  height: 25vh;
+}
+@media only screen and (min-width: 992px) {
+  .food-française {
+    height: 60vh;
+  }
+}
+
+.main-deux {
+  height: 162vh;
   position: relative;
 }
-.ol .carte {
+@media only screen and (min-width: 992px) {
+  .main-deux {
+    height: 105vh;
+  }
+}
+.main-deux .carte {
   border-radius: 57px 57px 0px 0px;
   background: #F5F5F5;
   position: absolute;
+  height: 50vh;
   width: 100%;
   top: -75px;
 }
 @media only screen and (min-width: 992px) {
-  .ol .carte {
+  .main-deux .carte {
     position: relative;
   }
 }
-
-.food-française {
-  width: 100%;
-}
-
-.mil {
+.main-deux .carte .mil {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 30px;
 }
 @media only screen and (min-width: 768px) {
-  .mil {
+  .main-deux .carte .mil {
     font-size: 48px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .mil {
+  .main-deux .carte .mil {
     font-size: 48px;
     padding: 0px 90px;
   }
 }
-
-.repas {
+.main-deux .carte .mil h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .main-deux .carte .mil h2 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main-deux .carte .mil h2 {
+    font-size: 48px;
+  }
+}
+.main-deux .entrees .entrees-fr {
+  text-decoration: underline #99E2D0 25%;
+  margin-bottom: 0px;
+  padding: 13px 30px;
+  text-underline-offset: 9px;
+}
+@media only screen and (min-width: 768px) {
+  .main-deux .entrees .entrees-fr {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main-deux .entrees .entrees-fr {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.main-deux .repas {
   display: flex;
   align-items: center;
   background: #F5F5F5;
@@ -172,43 +216,14 @@ i {
   margin-top: 30px;
 }
 @media only screen and (min-width: 992px) {
-  .repas {
+  .main-deux .repas {
     display: flex;
     justify-content: space-around;
     flex-direction: initial;
+    align-items: center;
   }
 }
-
-.mil h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 20px;
-}
-@media only screen and (min-width: 768px) {
-  .mil h2 {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .mil h2 {
-    font-size: 48px;
-  }
-}
-
-i.far.fa-heart {
-  font-size: 25px;
-}
-@media only screen and (min-width: 768px) {
-  i.far.fa-heart {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  i.far.fa-heart {
-    font-size: 40px;
-  }
-}
-
-.ent-alfr {
+.main-deux .repas .ent-alfr {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -222,80 +237,91 @@ i.far.fa-heart {
   padding: 8px 12px;
 }
 @media only screen and (min-width: 992px) {
-  .ent-alfr {
+  .main-deux .repas .ent-alfr {
     width: 25%;
   }
 }
-
-.entrees-fr {
+.main-deux .repas .ent-alfr :nth-child(1) {
+  margin-top: 12px;
+}
+.main-deux .repas .ent-alfr .prix {
+  font-weight: bold;
+}
+@media only screen and (min-width: 992px) {
+  .main-deux .repas .ent-alfr .prix {
+    font-size: 20px;
+  }
+}
+.main-deux .repas .ent-alfr .nom-entree {
+  font-weight: bold;
+  margin: 0px;
+  font-size: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .main-deux .repas .ent-alfr .nom-entree {
+    font-size: 20px;
+  }
+}
+.main-deux .repas .ent-alfr .ingredients {
+  font-weight: 100;
+  margin: 0px;
+  font-size: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .main-deux .repas .ent-alfr .ingredients {
+    font-size: 20px;
+  }
+}
+.main-deux .repas .ent-alfr:hover + .box {
+  transform: scale(1);
+  transform: rotate(0deg);
+}
+.main-deux .repas .ent-alfr:hover + .box   i.fas.fa-check-circle {
+  transform: translateY(0);
+}
+.main-deux .repas .ent-alfr .box {
+  transform: scale(0.1);
+  transform: rotate(-90deg);
+  transition: transform 350ms ease-in-out;
+  overflow: hidden;
+}
+.main-deux .repas .ent-alfr .box i.fas.fa-check-circle {
+  display: block;
+  transform: translateY(250%);
+  transition: transform 280ms ease-out 450ms;
+}
+.main-deux .entres-fr {
+  padding: 15px 54px;
+  text-decoration: underline #99E2D0 25%;
+  margin-bottom: 0px;
+}
+@media only screen and (min-width: 768px) {
+  .main-deux .entres-fr {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main-deux .entres-fr {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.main-deux .entrees-fr {
   text-decoration: underline #99E2D0 25%;
   margin-bottom: 0px;
   padding: 13px 30px;
   text-underline-offset: 9px;
 }
 @media only screen and (min-width: 768px) {
-  .entrees-fr {
+  .main-deux .entrees-fr {
     font-size: 20px;
     text-align: center;
   }
 }
 @media only screen and (min-width: 992px) {
-  .entrees-fr {
+  .main-deux .entrees-fr {
     font-size: 20px;
     text-align: center;
-  }
-}
-
-.entres-fr {
-  padding: 15px 54px;
-  text-decoration: underline #99E2D0 25%;
-  margin-bottom: 0px;
-}
-@media only screen and (min-width: 768px) {
-  .entres-fr {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .entres-fr {
-    font-size: 20px;
-    text-align: center;
-  }
-}
-
-.ent-alfr:nth-child(1) {
-  margin-top: 12px;
-}
-
-.ent-alfr .nom-entree, .ingredients {
-  margin: 0px;
-  font-size: 20px;
-}
-
-.ent-alfr .nom-entree {
-  font-weight: bold;
-}
-@media only screen and (min-width: 992px) {
-  .ent-alfr .nom-entree {
-    font-size: 20px;
-  }
-}
-
-.ent-alfr .prix {
-  font-weight: bold;
-}
-@media only screen and (min-width: 992px) {
-  .ent-alfr .prix {
-    font-size: 20px;
-  }
-}
-
-.ent-alfr .ingredients {
-  font-weight: 100;
-}
-@media only screen and (min-width: 992px) {
-  .ent-alfr .ingredients {
-    font-size: 20px;
   }
 }
 
@@ -307,6 +333,7 @@ body {
 .container {
   margin: 0px auto;
   padding: 0;
+  animation: 600ms ease 0ms 1 normal both;
 }
 
 h1 {
@@ -399,28 +426,41 @@ i {
     font-size: 25px;
   }
 }
-.ol {
+.food-française {
+  width: 100%;
+  height: 25vh;
+}
+
+@media only screen and (min-width: 992px) {
+  .food-française {
+    height: 60vh;
+  }
+}
+.main-deux {
+  height: 162vh;
   position: relative;
 }
 
-.ol .carte {
+@media only screen and (min-width: 992px) {
+  .main-deux {
+    height: 105vh;
+  }
+}
+.main-deux .carte {
   border-radius: 57px 57px 0px 0px;
   background: #F5F5F5;
   position: absolute;
+  height: 50vh;
   width: 100%;
   top: -75px;
 }
 
 @media only screen and (min-width: 992px) {
-  .ol .carte {
+  .main-deux .carte {
     position: relative;
   }
 }
-.food-française {
-  width: 100%;
-}
-
-.mil {
+.main-deux .carte .mil {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -428,17 +468,51 @@ i {
 }
 
 @media only screen and (min-width: 768px) {
-  .mil {
+  .main-deux .carte .mil {
     font-size: 48px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .mil {
+  .main-deux .carte .mil {
     font-size: 48px;
     padding: 0px 90px;
   }
 }
-.repas {
+.main-deux .carte .mil h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-deux .carte .mil h2 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main-deux .carte .mil h2 {
+    font-size: 48px;
+  }
+}
+.main-deux .entrees .entrees-fr {
+  text-decoration: underline #99E2D0 25%;
+  margin-bottom: 0px;
+  padding: 13px 30px;
+  text-underline-offset: 9px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-deux .entrees .entrees-fr {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main-deux .entrees .entrees-fr {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.main-deux .repas {
   display: flex;
   align-items: center;
   background: #F5F5F5;
@@ -450,42 +524,14 @@ i {
 }
 
 @media only screen and (min-width: 992px) {
-  .repas {
+  .main-deux .repas {
     display: flex;
     justify-content: space-around;
     flex-direction: initial;
+    align-items: center;
   }
 }
-.mil h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .mil h2 {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .mil h2 {
-    font-size: 48px;
-  }
-}
-i.far.fa-heart {
-  font-size: 25px;
-}
-
-@media only screen and (min-width: 768px) {
-  i.far.fa-heart {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  i.far.fa-heart {
-    font-size: 40px;
-  }
-}
-.ent-alfr {
+.main-deux .repas .ent-alfr {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -500,11 +546,85 @@ i.far.fa-heart {
 }
 
 @media only screen and (min-width: 992px) {
-  .ent-alfr {
+  .main-deux .repas .ent-alfr {
     width: 25%;
   }
 }
-.entrees-fr {
+.main-deux .repas .ent-alfr :nth-child(1) {
+  margin-top: 12px;
+}
+
+.main-deux .repas .ent-alfr .prix {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-deux .repas .ent-alfr .prix {
+    font-size: 20px;
+  }
+}
+.main-deux .repas .ent-alfr .nom-entree {
+  font-weight: bold;
+  margin: 0px;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-deux .repas .ent-alfr .nom-entree {
+    font-size: 20px;
+  }
+}
+.main-deux .repas .ent-alfr .ingredients {
+  font-weight: 100;
+  margin: 0px;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-deux .repas .ent-alfr .ingredients {
+    font-size: 20px;
+  }
+}
+.main-deux .repas .ent-alfr:hover + .box {
+  transform: scale(1);
+  transform: rotate(0deg);
+}
+
+.main-deux .repas .ent-alfr:hover + .box   i.fas.fa-check-circle {
+  transform: translateY(0);
+}
+
+.main-deux .repas .ent-alfr .box {
+  transform: scale(0.1);
+  transform: rotate(-90deg);
+  transition: transform 350ms ease-in-out;
+  overflow: hidden;
+}
+
+.main-deux .repas .ent-alfr .box i.fas.fa-check-circle {
+  display: block;
+  transform: translateY(250%);
+  transition: transform 280ms ease-out 450ms;
+}
+
+.main-deux .entres-fr {
+  padding: 15px 54px;
+  text-decoration: underline #99E2D0 25%;
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-deux .entres-fr {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main-deux .entres-fr {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.main-deux .entrees-fr {
   text-decoration: underline #99E2D0 25%;
   margin-bottom: 0px;
   padding: 13px 30px;
@@ -512,68 +632,15 @@ i.far.fa-heart {
 }
 
 @media only screen and (min-width: 768px) {
-  .entrees-fr {
+  .main-deux .entrees-fr {
     font-size: 20px;
     text-align: center;
   }
 }
 @media only screen and (min-width: 992px) {
-  .entrees-fr {
+  .main-deux .entrees-fr {
     font-size: 20px;
     text-align: center;
-  }
-}
-.entres-fr {
-  padding: 15px 54px;
-  text-decoration: underline #99E2D0 25%;
-  margin-bottom: 0px;
-}
-
-@media only screen and (min-width: 768px) {
-  .entres-fr {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .entres-fr {
-    font-size: 20px;
-    text-align: center;
-  }
-}
-.ent-alfr:nth-child(1) {
-  margin-top: 12px;
-}
-
-.ent-alfr .nom-entree, .ingredients {
-  margin: 0px;
-  font-size: 20px;
-}
-
-.ent-alfr .nom-entree {
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 992px) {
-  .ent-alfr .nom-entree {
-    font-size: 20px;
-  }
-}
-.ent-alfr .prix {
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 992px) {
-  .ent-alfr .prix {
-    font-size: 20px;
-  }
-}
-.ent-alfr .ingredients {
-  font-weight: 100;
-}
-
-@media only screen and (min-width: 992px) {
-  .ent-alfr .ingredients {
-    font-size: 20px;
   }
 }
 .nos-restaurants {
@@ -584,6 +651,7 @@ i.far.fa-heart {
   border-color: #F5F5F5;
   border: 1px;
   box-shadow: 0px 1px 6px grey;
+  transition: transform 400ms;
 }
 
 @media only screen and (min-width: 992px) {
@@ -591,6 +659,11 @@ i.far.fa-heart {
     padding: 20px 36px;
   }
 }
+.nos-restaurants:hover {
+  opacity: 0.6;
+  transform: scale(1.15);
+}
+
 button a {
   text-decoration: none;
   color: white;
@@ -606,10 +679,6 @@ button a {
     font-size: 24px;
   }
 }
-.nos-restaurants:hover {
-  opacity: 0.6;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   margin: 0px !important;
@@ -618,6 +687,7 @@ body {
 .container {
   margin: 0px auto;
   padding: 0;
+  animation: 600ms ease 0ms 1 normal both;
 }
 
 h1 {
@@ -718,6 +788,7 @@ i {
   border-color: #F5F5F5;
   border: 1px;
   box-shadow: 0px 1px 6px grey;
+  transition: transform 400ms;
 }
 
 @media only screen and (min-width: 992px) {
@@ -725,6 +796,11 @@ i {
     padding: 20px 36px;
   }
 }
+.nos-restaurants:hover {
+  opacity: 0.6;
+  transform: scale(1.15);
+}
+
 button a {
   text-decoration: none;
   color: white;
@@ -740,10 +816,6 @@ button a {
     font-size: 24px;
   }
 }
-.nos-restaurants:hover {
-  opacity: 0.6;
-}
-
 .ville {
   margin-left: 15px;
 }
@@ -856,6 +928,11 @@ button a {
     margin-top: 70px;
   }
 }
+.fonc-resto .fonctionnement:hover {
+  background: #f2eafb;
+  cursor: pointer;
+}
+
 .fonc-resto .fonctionnement .choix {
   padding-left: 26px;
   font-size: 16px;
@@ -899,22 +976,15 @@ button a {
   font-size: 22px;
 }
 
+.fonc-resto .fonctionnement i:hover {
+  color: #9356DC;
+}
+
 @media only screen and (min-width: 992px) {
   .fonc-resto .fonctionnement i {
     font-size: 20px;
   }
 }
-.fonc-resto .fonctionnement :hover {
-  color: #9356DC;
-  opacity: 1;
-}
-
-.fonc-resto :hover {
-  background: #9356DC;
-  opacity: 0.6;
-  cursor: pointer;
-}
-
 h3 {
   margin-left: 20px;
   margin-top: 50px;
@@ -932,7 +1002,7 @@ h3 {
   h3 {
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 48px;
+    font-size: 35 px;
     text-align: center;
   }
 }
@@ -979,7 +1049,7 @@ h3 {
     font-size: 30px;
   }
 }
-.restaurants .artic-resto .txt-txt :hover::before {
+.restaurants .artic-resto .txt-txt .fa-heart:hover::before {
   background: linear-gradient(#9356DC, #FF79DA);
   cursor: pointer;
 }

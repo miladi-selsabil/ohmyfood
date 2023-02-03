@@ -1,6 +1,5 @@
 @use "../utils/mixin.scss" as mix;
 @use "../utils/variables.scss" as v;
-
  .main{
   @include mix.desktop{
     display: flex;
@@ -40,6 +39,10 @@
           width: 70%;
           margin-top: 70px;
         }
+        &:hover{
+          background: lighten($color: v.$primaire, $amount: 35);
+          cursor: pointer;
+        }
          .choix{
           padding-left: 26px;
           font-size: 16px;
@@ -77,15 +80,13 @@
           margin-left: 35px;
           color:gray;
           font-size: 22px;
+          &:hover{
+            color: v.$primaire;}
           @include mix.desktop{
           @include mix.size;
           }
-        }:hover{
-          color: v.$primaire; opacity: 1;}
-    }:hover{
-      background: v.$primaire;
-      opacity: 0.6;
-      cursor: pointer;
+          
+        }
     }
   }
  
@@ -101,7 +102,8 @@
       @include mix.desktop{
         margin-top: 30px;
         margin-bottom: 30px;
-        font-size: 48px;
+        font-size: 35
+        px;
         @include mix.center;
 
       }
@@ -139,7 +141,8 @@
       @include mix.desktop{
         font-size: 30px;
       }
-  }:hover::before{background: linear-gradient(#9356DC, #FF79DA); cursor: pointer;}
+      &:hover::before{background: linear-gradient(#9356DC, #FF79DA); cursor: pointer;}
+  }
      .nom-restau{
     padding-left: 20px;
     font-weight: bold;

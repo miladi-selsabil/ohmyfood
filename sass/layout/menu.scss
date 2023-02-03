@@ -1,130 +1,160 @@
 @use "../utils/mixin.scss" as mix;
 @use "../utils/variables.scss" as v;
 
-
-
-.ol{position: relative;
-
-.carte{
-  border-radius: 57px 57px 0px 0px;
+.food-française{
+  width: 100%;
+  height: 25vh;
+  @include mix.desktop{height: 60vh;}
+}
+.main-deux{
+  height: 162vh;
+  position: relative;
+  @include mix.desktop{height: 105vh;}
+  .carte{
+    border-radius: 57px 57px 0px 0px;
     background: #F5F5F5;
     @include mix.absolute;
+    height: 50vh;
     width: 100%;
     top: -75px;
-    @include mix.desktop{position: relative;}
-    
-  }
-}
-    .food-française{
-      width: 100%;
-    }
-    .mil{
-      @include mix.local;
-      @include mix.between;
-      padding: 0px 30px;
-      @include mix.tablette{
-        font-size: 48px;
-      }
-      @include mix.desktop{
-        font-size: 48px;
-        padding: 0px 90px;
-      }
-    } .repas{
-      @include  mix.local;
-        background: #F5F5F5;
-        border-radius: 24px;
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        margin-top: 30px;
+    @include mix.desktop{
+      position: relative;
+      }.mil{
+        @include mix.local;
+        @include mix.between;
+        padding: 0px 30px;
         @include mix.tablette{
-          
-        }
-        @include mix.desktop{
-          @include mix.around;
-          flex-direction: initial;
-
-        }}
-      
-    .mil h2{font-family: 'Shrikhand', cursive; 
-      
-      @include mix.size;
-      @include mix.tablette{
-        @include mix.size;
-        }
-        @include mix.desktop{
           font-size: 48px;
         }
-    }
-    i.far.fa-heart{
-      font-size: 25px;
-      @include mix.tablette{
-        @include mix.size;
+        @include mix.desktop{
+        font-size: 48px;
+        padding: 0px 90px;
+            }h2{
+              font-family: 'Shrikhand', cursive; 
+              @include mix.size;
+              @include mix.tablette{
+              @include mix.size;
+              }
+              @include mix.desktop{
+                  font-size: 48px;
+              }
+            }
         }
-      @include mix.desktop{
-          font-size: 40px;
+   }.entrees{
+      .entrees-fr{
+          text-decoration: underline v.$tertiaire 25%; margin-bottom: 0px;
+          padding: 13px 30px;
+          text-underline-offset: 9px;
+          @include mix.tablette{
+          font-size: 20px;
+          @include mix.center;
         }
-    }
-    .ent-alfr{
-      @include mix.local;
-      @include mix.between;
-      background: white;
-      border-radius: 13px;
-      padding: 3px;
-      width: 80%;
-      font-size: 15px;
-      margin-top: 20px;
-      box-shadow: 0px 1px 9px grey;
-      padding: 8px 12px;
-      @include mix.desktop{
-          width: 25%;
+        @include mix.desktop{
+          @include mix.size;
+          @include mix.center;
+    
+        }
       }
-    }
-     .entrees-fr{
-      text-decoration: underline v.$tertiaire 25%; margin-bottom: 0px;
-      padding: 13px 30px;
-      text-underline-offset: 9px;
-      @include mix.tablette{
+      }.repas{
+        @include  mix.local;
+          background: #F5F5F5;
+          border-radius: 24px;
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          margin-top: 30px;
+          @include mix.desktop{
+            @include mix.around;
+            flex-direction: initial;
+            align-items: center;
+
+          }.ent-alfr{
+            @include mix.local;
+            @include mix.between;
+            background: white;
+            border-radius: 13px;
+            padding: 3px;
+            width: 80%;
+            font-size: 15px;
+            margin-top: 20px;
+            box-shadow: 0px 1px 9px grey;
+            padding: 8px 12px;
+            @include mix.desktop{
+                width: 25%;
+            }:nth-child(1){
+              margin-top: 12px;
+            }.prix{
+              font-weight: bold;
+              @include mix.desktop{
+              @include mix.size;
+            }
+            }.nom-entree{
+              font-weight: bold;
+              margin: 0px; 
+              @include mix.size;
+              @include mix.desktop{
+                @include mix.size;
+              }
+            }.ingredients{
+              font-weight: 100;
+              margin: 0px; 
+              @include mix.size;
+              @include mix.desktop{
+                @include mix.size;
+        
+              }
+            }&:hover + .box {
+              transform: scale(1);
+              transform: rotate(0deg); 
+              i.fas.fa-check-circle {
+                  transform: translateY(0);
+              }
+          }.box{
+            transform: scale(.1);
+            transform: rotate(-90deg);
+            transition: transform 350ms ease-in-out;
+            overflow: hidden;
+            i.fas.fa-check-circle {
+                display: block;
+                transform: translateY(250%);
+                transition: transform 280ms ease-out 450ms;
+            }
+        }
+            
+          }
+      }.entres-fr{
+        padding: 15px 54px; 
+        text-decoration: underline v.$tertiaire 25%;
+        margin-bottom: 0px;
+        @include mix.tablette{
+          font-size: 20px;
+        }
+          @include mix.desktop{
+            @include mix.size;
+            @include mix.center;
+    
+          }
+      
+      }.entrees-fr{
+        text-decoration: underline v.$tertiaire 25%; margin-bottom: 0px;
+        padding: 13px 30px;
+        text-underline-offset: 9px;
+        @include mix.tablette{
         font-size: 20px;
         @include mix.center;
       }
-        @include mix.desktop{
-          @include mix.size;
-          @include mix.center;
+      @include mix.desktop{
+        @include mix.size;
+        @include mix.center;
   
-        }
+      }
     }
-    .entres-fr{
-      padding: 15px 54px; 
-      text-decoration: underline v.$tertiaire 25%;
-       margin-bottom: 0px;
-      @include mix.tablette{
-        font-size: 20px;
-        
-        }
-        @include mix.desktop{
-          @include mix.size;
-          @include mix.center;
+      
+     
+}   
+ 
   
-        }
     
-    }
-    .ent-alfr:nth-child(1){margin-top: 12px;}
-    .ent-alfr .nom-entree, .ingredients{margin: 0px; @include mix.size; }
-    .ent-alfr .nom-entree{font-weight: bold;
-      @include mix.desktop{
-        @include mix.size;
-      }
-    }
-    .ent-alfr .prix{
-      font-weight: bold;
-      @include mix.desktop{
-      @include mix.size;
-    }
-    }
-    .ent-alfr .ingredients{font-weight: 100;
-      @include mix.desktop{
-        @include mix.size;
 
-      }
-    }
+    
+    
