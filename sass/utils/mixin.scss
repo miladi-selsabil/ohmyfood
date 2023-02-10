@@ -1,28 +1,27 @@
-
 @mixin local {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-@mixin around{
-    display: flex;
-    justify-content: space-around;
-
+@mixin around {
+  display: flex;
+  justify-content: space-around;
 }
-@mixin absolute{position: absolute;}
+@mixin absolute {
+  position: absolute;
+}
 
-
-@mixin paddingmenu{
-    padding-top:50px ;
+@mixin paddingmenu {
+  padding-top: 50px;
 }
 //Breakpoint
-@mixin tablette{
-    @media only screen and (min-width: 768px) {
-        @content;
-    }
+@mixin tablette {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
 }
 @mixin desktop {
-    @media only screen and (min-width: 992px) {
-        @content;
-    }
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
 }

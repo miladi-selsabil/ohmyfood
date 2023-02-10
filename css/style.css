@@ -182,25 +182,33 @@ footer .txt-footer {
     font-size: 48px;
   }
 }
-.main-deux .carte .entrees .entrees-fr, .main-deux .carte .plats .entrees-fr, .main-deux .carte .desserts .entrees-fr {
+.main-deux .carte .entrees .entrees-fr,
+.main-deux .carte .plats .entrees-fr,
+.main-deux .carte .desserts .entrees-fr {
   text-decoration: underline #99E2D0 25%;
   margin-bottom: 0px;
   padding: 13px 30px;
   text-underline-offset: 9px;
 }
 @media only screen and (min-width: 768px) {
-  .main-deux .carte .entrees .entrees-fr, .main-deux .carte .plats .entrees-fr, .main-deux .carte .desserts .entrees-fr {
+  .main-deux .carte .entrees .entrees-fr,
+  .main-deux .carte .plats .entrees-fr,
+  .main-deux .carte .desserts .entrees-fr {
     font-size: 20px;
     text-align: center;
   }
 }
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .entrees-fr, .main-deux .carte .plats .entrees-fr, .main-deux .carte .desserts .entrees-fr {
+  .main-deux .carte .entrees .entrees-fr,
+  .main-deux .carte .plats .entrees-fr,
+  .main-deux .carte .desserts .entrees-fr {
     font-size: 20px;
     text-align: center;
   }
 }
-.main-deux .carte .entrees .repas, .main-deux .carte .plats .repas, .main-deux .carte .desserts .repas {
+.main-deux .carte .entrees .repas,
+.main-deux .carte .plats .repas,
+.main-deux .carte .desserts .repas {
   display: flex;
   align-items: center;
   background: #f5f5f5;
@@ -210,14 +218,18 @@ footer .txt-footer {
   flex-direction: column;
 }
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas, .main-deux .carte .plats .repas, .main-deux .carte .desserts .repas {
+  .main-deux .carte .entrees .repas,
+  .main-deux .carte .plats .repas,
+  .main-deux .carte .desserts .repas {
     display: flex;
     justify-content: space-around;
     flex-direction: initial;
     align-items: center;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr, .main-deux .carte .plats .repas .ent-alfr, .main-deux .carte .desserts .repas .ent-alfr {
+.main-deux .carte .entrees .repas .ent-alfr,
+.main-deux .carte .plats .repas .ent-alfr,
+.main-deux .carte .desserts .repas .ent-alfr {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -231,71 +243,101 @@ footer .txt-footer {
   padding: 8px 12px;
 }
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr, .main-deux .carte .plats .repas .ent-alfr, .main-deux .carte .desserts .repas .ent-alfr {
+  .main-deux .carte .entrees .repas .ent-alfr,
+  .main-deux .carte .plats .repas .ent-alfr,
+  .main-deux .carte .desserts .repas .ent-alfr {
     width: 25%;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr :nth-child(1), .main-deux .carte .plats .repas .ent-alfr :nth-child(1), .main-deux .carte .desserts .repas .ent-alfr :nth-child(1) {
+.main-deux .carte .entrees .repas .ent-alfr :nth-child(1),
+.main-deux .carte .plats .repas .ent-alfr :nth-child(1),
+.main-deux .carte .desserts .repas .ent-alfr :nth-child(1) {
   margin-top: 12px;
 }
-.main-deux .carte .entrees .repas .ent-alfr .nom-entree, .main-deux .carte .plats .repas .ent-alfr .nom-entree, .main-deux .carte .desserts .repas .ent-alfr .nom-entree {
+.main-deux .carte .entrees .repas .ent-alfr .nom-entree,
+.main-deux .carte .plats .repas .ent-alfr .nom-entree,
+.main-deux .carte .desserts .repas .ent-alfr .nom-entree {
   font-weight: bold;
   margin: 0px;
   font-size: 20px;
 }
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr .nom-entree, .main-deux .carte .plats .repas .ent-alfr .nom-entree, .main-deux .carte .desserts .repas .ent-alfr .nom-entree {
+  .main-deux .carte .entrees .repas .ent-alfr .nom-entree,
+  .main-deux .carte .plats .repas .ent-alfr .nom-entree,
+  .main-deux .carte .desserts .repas .ent-alfr .nom-entree {
     font-size: 20px;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr .ingredients, .main-deux .carte .plats .repas .ent-alfr .ingredients, .main-deux .carte .desserts .repas .ent-alfr .ingredients {
+.main-deux .carte .entrees .repas .ent-alfr .ingredients,
+.main-deux .carte .plats .repas .ent-alfr .ingredients,
+.main-deux .carte .desserts .repas .ent-alfr .ingredients {
   font-weight: 100;
   margin: 0px;
   font-size: 20px;
 }
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr .ingredients, .main-deux .carte .plats .repas .ent-alfr .ingredients, .main-deux .carte .desserts .repas .ent-alfr .ingredients {
+  .main-deux .carte .entrees .repas .ent-alfr .ingredients,
+  .main-deux .carte .plats .repas .ent-alfr .ingredients,
+  .main-deux .carte .desserts .repas .ent-alfr .ingredients {
     font-size: 20px;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr .prix, .main-deux .carte .plats .repas .ent-alfr .prix, .main-deux .carte .desserts .repas .ent-alfr .prix {
+.main-deux .carte .entrees .repas .ent-alfr .prix,
+.main-deux .carte .plats .repas .ent-alfr .prix,
+.main-deux .carte .desserts .repas .ent-alfr .prix {
   font-weight: bold;
 }
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr .prix, .main-deux .carte .plats .repas .ent-alfr .prix, .main-deux .carte .desserts .repas .ent-alfr .prix {
+  .main-deux .carte .entrees .repas .ent-alfr .prix,
+  .main-deux .carte .plats .repas .ent-alfr .prix,
+  .main-deux .carte .desserts .repas .ent-alfr .prix {
     font-size: 20px;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr:hover + .box, .main-deux .carte .plats .repas .ent-alfr:hover + .box, .main-deux .carte .desserts .repas .ent-alfr:hover + .box {
+.main-deux .carte .entrees .repas .ent-alfr:hover + .box,
+.main-deux .carte .plats .repas .ent-alfr:hover + .box,
+.main-deux .carte .desserts .repas .ent-alfr:hover + .box {
   transform: scale(1);
   transform: rotate(0deg);
 }
-.main-deux .carte .entrees .repas .ent-alfr:hover + .box   i.fas.fa-check-circle, .main-deux .carte .plats .repas .ent-alfr:hover + .box   i.fas.fa-check-circle, .main-deux .carte .desserts .repas .ent-alfr:hover + .box   i.fas.fa-check-circle {
+.main-deux .carte .entrees .repas .ent-alfr:hover + .box   i.fas.fa-check-circle,
+.main-deux .carte .plats .repas .ent-alfr:hover + .box   i.fas.fa-check-circle,
+.main-deux .carte .desserts .repas .ent-alfr:hover + .box   i.fas.fa-check-circle {
   transform: translateY(0);
 }
-.main-deux .carte .entrees .repas .ent-alfr .box, .main-deux .carte .plats .repas .ent-alfr .box, .main-deux .carte .desserts .repas .ent-alfr .box {
+.main-deux .carte .entrees .repas .ent-alfr .box,
+.main-deux .carte .plats .repas .ent-alfr .box,
+.main-deux .carte .desserts .repas .ent-alfr .box {
   transform: scale(0.1);
   transform: rotate(-90deg);
   transition: transform 350ms ease-in-out;
   overflow: hidden;
 }
-.main-deux .carte .entrees .repas .ent-alfr .box i.fas.fa-check-circle, .main-deux .carte .plats .repas .ent-alfr .box i.fas.fa-check-circle, .main-deux .carte .desserts .repas .ent-alfr .box i.fas.fa-check-circle {
+.main-deux .carte .entrees .repas .ent-alfr .box i.fas.fa-check-circle,
+.main-deux .carte .plats .repas .ent-alfr .box i.fas.fa-check-circle,
+.main-deux .carte .desserts .repas .ent-alfr .box i.fas.fa-check-circle {
   display: block;
   transform: translateY(250%);
   transition: transform 280ms ease-out 450ms;
 }
-.main-deux .carte .entrees .entres-fr, .main-deux .carte .plats .entres-fr, .main-deux .carte .desserts .entres-fr {
+.main-deux .carte .entrees .entres-fr,
+.main-deux .carte .plats .entres-fr,
+.main-deux .carte .desserts .entres-fr {
   padding: 15px 54px;
   text-decoration: underline #99E2D0 25%;
   margin-bottom: 0px;
 }
 @media only screen and (min-width: 768px) {
-  .main-deux .carte .entrees .entres-fr, .main-deux .carte .plats .entres-fr, .main-deux .carte .desserts .entres-fr {
+  .main-deux .carte .entrees .entres-fr,
+  .main-deux .carte .plats .entres-fr,
+  .main-deux .carte .desserts .entres-fr {
     font-size: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .entres-fr, .main-deux .carte .plats .entres-fr, .main-deux .carte .desserts .entres-fr {
+  .main-deux .carte .entrees .entres-fr,
+  .main-deux .carte .plats .entres-fr,
+  .main-deux .carte .desserts .entres-fr {
     font-size: 20px;
     text-align: center;
   }
@@ -504,7 +546,9 @@ footer .txt-footer {
     font-size: 48px;
   }
 }
-.main-deux .carte .entrees .entrees-fr, .main-deux .carte .plats .entrees-fr, .main-deux .carte .desserts .entrees-fr {
+.main-deux .carte .entrees .entrees-fr,
+.main-deux .carte .plats .entrees-fr,
+.main-deux .carte .desserts .entrees-fr {
   text-decoration: underline #99E2D0 25%;
   margin-bottom: 0px;
   padding: 13px 30px;
@@ -512,18 +556,24 @@ footer .txt-footer {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-deux .carte .entrees .entrees-fr, .main-deux .carte .plats .entrees-fr, .main-deux .carte .desserts .entrees-fr {
+  .main-deux .carte .entrees .entrees-fr,
+  .main-deux .carte .plats .entrees-fr,
+  .main-deux .carte .desserts .entrees-fr {
     font-size: 20px;
     text-align: center;
   }
 }
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .entrees-fr, .main-deux .carte .plats .entrees-fr, .main-deux .carte .desserts .entrees-fr {
+  .main-deux .carte .entrees .entrees-fr,
+  .main-deux .carte .plats .entrees-fr,
+  .main-deux .carte .desserts .entrees-fr {
     font-size: 20px;
     text-align: center;
   }
 }
-.main-deux .carte .entrees .repas, .main-deux .carte .plats .repas, .main-deux .carte .desserts .repas {
+.main-deux .carte .entrees .repas,
+.main-deux .carte .plats .repas,
+.main-deux .carte .desserts .repas {
   display: flex;
   align-items: center;
   background: #f5f5f5;
@@ -534,14 +584,18 @@ footer .txt-footer {
 }
 
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas, .main-deux .carte .plats .repas, .main-deux .carte .desserts .repas {
+  .main-deux .carte .entrees .repas,
+  .main-deux .carte .plats .repas,
+  .main-deux .carte .desserts .repas {
     display: flex;
     justify-content: space-around;
     flex-direction: initial;
     align-items: center;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr, .main-deux .carte .plats .repas .ent-alfr, .main-deux .carte .desserts .repas .ent-alfr {
+.main-deux .carte .entrees .repas .ent-alfr,
+.main-deux .carte .plats .repas .ent-alfr,
+.main-deux .carte .desserts .repas .ent-alfr {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -556,80 +610,110 @@ footer .txt-footer {
 }
 
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr, .main-deux .carte .plats .repas .ent-alfr, .main-deux .carte .desserts .repas .ent-alfr {
+  .main-deux .carte .entrees .repas .ent-alfr,
+  .main-deux .carte .plats .repas .ent-alfr,
+  .main-deux .carte .desserts .repas .ent-alfr {
     width: 25%;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr :nth-child(1), .main-deux .carte .plats .repas .ent-alfr :nth-child(1), .main-deux .carte .desserts .repas .ent-alfr :nth-child(1) {
+.main-deux .carte .entrees .repas .ent-alfr :nth-child(1),
+.main-deux .carte .plats .repas .ent-alfr :nth-child(1),
+.main-deux .carte .desserts .repas .ent-alfr :nth-child(1) {
   margin-top: 12px;
 }
 
-.main-deux .carte .entrees .repas .ent-alfr .nom-entree, .main-deux .carte .plats .repas .ent-alfr .nom-entree, .main-deux .carte .desserts .repas .ent-alfr .nom-entree {
+.main-deux .carte .entrees .repas .ent-alfr .nom-entree,
+.main-deux .carte .plats .repas .ent-alfr .nom-entree,
+.main-deux .carte .desserts .repas .ent-alfr .nom-entree {
   font-weight: bold;
   margin: 0px;
   font-size: 20px;
 }
 
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr .nom-entree, .main-deux .carte .plats .repas .ent-alfr .nom-entree, .main-deux .carte .desserts .repas .ent-alfr .nom-entree {
+  .main-deux .carte .entrees .repas .ent-alfr .nom-entree,
+  .main-deux .carte .plats .repas .ent-alfr .nom-entree,
+  .main-deux .carte .desserts .repas .ent-alfr .nom-entree {
     font-size: 20px;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr .ingredients, .main-deux .carte .plats .repas .ent-alfr .ingredients, .main-deux .carte .desserts .repas .ent-alfr .ingredients {
+.main-deux .carte .entrees .repas .ent-alfr .ingredients,
+.main-deux .carte .plats .repas .ent-alfr .ingredients,
+.main-deux .carte .desserts .repas .ent-alfr .ingredients {
   font-weight: 100;
   margin: 0px;
   font-size: 20px;
 }
 
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr .ingredients, .main-deux .carte .plats .repas .ent-alfr .ingredients, .main-deux .carte .desserts .repas .ent-alfr .ingredients {
+  .main-deux .carte .entrees .repas .ent-alfr .ingredients,
+  .main-deux .carte .plats .repas .ent-alfr .ingredients,
+  .main-deux .carte .desserts .repas .ent-alfr .ingredients {
     font-size: 20px;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr .prix, .main-deux .carte .plats .repas .ent-alfr .prix, .main-deux .carte .desserts .repas .ent-alfr .prix {
+.main-deux .carte .entrees .repas .ent-alfr .prix,
+.main-deux .carte .plats .repas .ent-alfr .prix,
+.main-deux .carte .desserts .repas .ent-alfr .prix {
   font-weight: bold;
 }
 
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr .prix, .main-deux .carte .plats .repas .ent-alfr .prix, .main-deux .carte .desserts .repas .ent-alfr .prix {
+  .main-deux .carte .entrees .repas .ent-alfr .prix,
+  .main-deux .carte .plats .repas .ent-alfr .prix,
+  .main-deux .carte .desserts .repas .ent-alfr .prix {
     font-size: 20px;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr:hover + .box, .main-deux .carte .plats .repas .ent-alfr:hover + .box, .main-deux .carte .desserts .repas .ent-alfr:hover + .box {
+.main-deux .carte .entrees .repas .ent-alfr:hover + .box,
+.main-deux .carte .plats .repas .ent-alfr:hover + .box,
+.main-deux .carte .desserts .repas .ent-alfr:hover + .box {
   transform: scale(1);
   transform: rotate(0deg);
 }
 
-.main-deux .carte .entrees .repas .ent-alfr:hover + .box   i.fas.fa-check-circle, .main-deux .carte .plats .repas .ent-alfr:hover + .box   i.fas.fa-check-circle, .main-deux .carte .desserts .repas .ent-alfr:hover + .box   i.fas.fa-check-circle {
+.main-deux .carte .entrees .repas .ent-alfr:hover + .box   i.fas.fa-check-circle,
+.main-deux .carte .plats .repas .ent-alfr:hover + .box   i.fas.fa-check-circle,
+.main-deux .carte .desserts .repas .ent-alfr:hover + .box   i.fas.fa-check-circle {
   transform: translateY(0);
 }
 
-.main-deux .carte .entrees .repas .ent-alfr .box, .main-deux .carte .plats .repas .ent-alfr .box, .main-deux .carte .desserts .repas .ent-alfr .box {
+.main-deux .carte .entrees .repas .ent-alfr .box,
+.main-deux .carte .plats .repas .ent-alfr .box,
+.main-deux .carte .desserts .repas .ent-alfr .box {
   transform: scale(0.1);
   transform: rotate(-90deg);
   transition: transform 350ms ease-in-out;
   overflow: hidden;
 }
 
-.main-deux .carte .entrees .repas .ent-alfr .box i.fas.fa-check-circle, .main-deux .carte .plats .repas .ent-alfr .box i.fas.fa-check-circle, .main-deux .carte .desserts .repas .ent-alfr .box i.fas.fa-check-circle {
+.main-deux .carte .entrees .repas .ent-alfr .box i.fas.fa-check-circle,
+.main-deux .carte .plats .repas .ent-alfr .box i.fas.fa-check-circle,
+.main-deux .carte .desserts .repas .ent-alfr .box i.fas.fa-check-circle {
   display: block;
   transform: translateY(250%);
   transition: transform 280ms ease-out 450ms;
 }
 
-.main-deux .carte .entrees .entres-fr, .main-deux .carte .plats .entres-fr, .main-deux .carte .desserts .entres-fr {
+.main-deux .carte .entrees .entres-fr,
+.main-deux .carte .plats .entres-fr,
+.main-deux .carte .desserts .entres-fr {
   padding: 15px 54px;
   text-decoration: underline #99E2D0 25%;
   margin-bottom: 0px;
 }
 
 @media only screen and (min-width: 768px) {
-  .main-deux .carte .entrees .entres-fr, .main-deux .carte .plats .entres-fr, .main-deux .carte .desserts .entres-fr {
+  .main-deux .carte .entrees .entres-fr,
+  .main-deux .carte .plats .entres-fr,
+  .main-deux .carte .desserts .entres-fr {
     font-size: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .entres-fr, .main-deux .carte .plats .entres-fr, .main-deux .carte .desserts .entres-fr {
+  .main-deux .carte .entrees .entres-fr,
+  .main-deux .carte .plats .entres-fr,
+  .main-deux .carte .desserts .entres-fr {
     font-size: 20px;
     text-align: center;
   }
@@ -927,7 +1011,7 @@ header .reservation .rese-texte {
 .main .choix-fonct .fonc-resto .fonctionnement {
   display: flex;
   align-items: center;
-  background: #F5F5F5;
+  background: #f5f5f5;
   border-radius: 24px;
   padding: 5px 9px 5px 9px;
   width: 80%;
@@ -1027,7 +1111,7 @@ header .reservation .rese-texte {
   }
 }
 .main .restaurants {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   margin-top: 73px;
   padding-top: 20px;
 }
@@ -1160,7 +1244,7 @@ header .reservation .rese-texte {
   }
 }
 .main .restaurants .artic-resto .resto a .txt-txt .fa-heart:hover::before {
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356dc, #ff79da);
   cursor: pointer;
 }
 

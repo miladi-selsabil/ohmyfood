@@ -1,208 +1,203 @@
 @use "../utils/mixin.scss" as mix;
 @use "../utils/variables.scss" as v;
-.main{
-  @include mix.desktop{
+.main {
+  @include mix.desktop {
     display: flex;
   }
-    .choix-fonct{
-      @include mix.desktop{
+  .choix-fonct {
+    @include mix.desktop {
       width: 30%;
       margin-top: 73px;
-      }
+    }
 
-      .fonc-resto{
-        flex-direction: column;
+    .fonc-resto {
+      flex-direction: column;
+      @include mix.local;
+
+      .fonctionnement {
         @include mix.local;
-        
-        .fonctionnement{
-          @include  mix.local;
-            background: #F5F5F5;
-            border-radius: 24px;
-            padding: 5px 9px 5px 9px;
-            width: 80%;
-            box-shadow: 2px 0 19px 2px rgb(0 0 0 / 10%);
-            font-size: 20px;
-            position: relative;
-            margin-top: 30px;
-           @include mix.tablette{
-              width: 70%;   
-            }
-            @include mix.desktop{
-              width: 70%;
-              margin-top: 70px;
-            }
-            &:hover{
-              background: lighten($color: v.$primaire, $amount: 35);
-              cursor: pointer;
-            }
-              .number{
-                  background: v.$primaire;
-                  font-size: 13px;
-                  color: white;
-                  width: 20px;
-                  height: 20px;
-                  border-radius: 40px;
-                  text-align: center;
-                  @include mix.absolute;
-                  left: -14px;
-                  @include mix.desktop{
-                    font-size: 20px;
-                    width: 34px;
-                    padding-top: 5px;
-                    height: 30px;
-                    left: -33px;
-                  }
-              }
-              i{
-                margin-left: 35px;
-                color:gray;
-                font-size: 22px;
-                &:hover{
-                  color: v.$primaire;}
-                @include mix.desktop{
-                  font-size: 20px;
-                }
-                
-              }
-              .choix{
-                padding-left: 26px;
-                font-size: 16px;
-                font-weight: bold;
-                @include mix.tablette{
-                font-size: 24px;
-                }
-                @include mix.desktop{
-                font-size: 20px;
-                 }
-              }
-       
-        }    
-      }
-    }
-
-  h3{
-    margin-left: 20px;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    font-size: 20px;
-    @include mix.tablette{
-      font-size: 20px;
-      text-align: center;
-    }
-      @include mix.desktop{
+        background: #f5f5f5;
+        border-radius: 24px;
+        padding: 5px 9px 5px 9px;
+        width: 80%;
+        box-shadow: 2px 0 19px 2px rgb(0 0 0 / 10%);
+        font-size: 20px;
+        position: relative;
         margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 35px;
-        text-align: center;
-
-      }
-  }
-    .restaurants{
-
-      background-color: #F5F5F5;
-      margin-top: 73px;
-      padding-top: 20px;
-      @include mix.desktop{
-      width: 70%;
-      padding-top: 0px;
-
-      }
-    
-        .artic-resto{ 
-          @include  mix.local;
-          flex-direction: column;
-          padding-bottom: 40px;
-          @include mix.desktop{
-          @include mix.around;
-          flex-wrap: wrap;
-          flex-direction: initial;
+        @include mix.tablette {
+          width: 70%;
+        }
+        @include mix.desktop {
+          width: 70%;
+          margin-top: 70px;
+        }
+        &:hover {
+          background: lighten($color: v.$primaire, $amount: 35);
+          cursor: pointer;
+        }
+        .number {
+          background: v.$primaire;
+          font-size: 13px;
+          color: white;
+          width: 20px;
+          height: 20px;
+          border-radius: 40px;
+          text-align: center;
+          @include mix.absolute;
+          left: -14px;
+          @include mix.desktop {
+            font-size: 20px;
+            width: 34px;
+            padding-top: 5px;
+            height: 30px;
+            left: -33px;
           }
-          .resto {
-            position: relative;
-            width: 90%;
-            border-radius: 30px;
-            margin-top: 25px;
-            box-shadow: 2px 0 19px 2px rgb(0 0 0 / 15%);
-            @include mix.tablette{
-            width: 80%;
-            
-            }
-            @include mix.desktop{
-              width: 45%;
-            
-            }
-          a{
-            text-decoration: none; 
-            color: black;
-            .nouveau{
-              @include mix.absolute;
-                left: 70%;
-                background: v.$tertiaire;
-                padding: 10px 17px;
-                color: green;
-                font-weight: bold;
-                @include mix.tablette{
-                @include mix.absolute;
-                left: 330px;
-                font-size: 20px;
-                top: 34px;
-                }
-                @include mix.desktop{
-                @include mix.absolute;
-                left: 60%;
-                font-size: 20px;
-                top: 34px;
-                }
-            }
-            .img-resto{
-              width: 100%;
-              border-radius: 30px 30px 0 0; 
-              height: 330px;
-              @include mix.tablette{
-              height: 330px;
-              }
-              @include mix.desktop{
-              width: 99%;
-              margin: auto;
-              display: flex;
-              align-items: center;
-              }
-            }
-            .txt-txt{
-              @include  mix.local; 
-              justify-content: space-between;
-                .nom-restau{
-                  padding-left: 20px;
-                  font-weight: bold;
-                  font-size: 23px;
-                  margin-bottom: 0px;
-                  @include mix.tablette{
-                  font-size: 26px;    
-                  }
-                  @include mix.desktop{
-                    font-size: 20px;
-                  }
-                }
-                .adresse{
-                  padding-left: 20px;
-                  font-size: 20px;
-                  margin-top: 0px;
-                  @include mix.desktop{
-                  }
-                }
-              .fa-heart {
-                padding-right: 20px;
-                font-size: 20px;
-                @include mix.desktop{
-                  font-size: 30px;
-                }
-                &:hover::before{
-                  background: linear-gradient(#9356DC, #FF79DA);
-                  cursor: pointer;}
-              }
-           }
+        }
+        i {
+          margin-left: 35px;
+          color: gray;
+          font-size: 22px;
+          &:hover {
+            color: v.$primaire;
+          }
+          @include mix.desktop {
+            font-size: 20px;
+          }
+        }
+        .choix {
+          padding-left: 26px;
+          font-size: 16px;
+          font-weight: bold;
+          @include mix.tablette {
+            font-size: 24px;
+          }
+          @include mix.desktop {
+            font-size: 20px;
           }
         }
       }
     }
   }
+
+  h3 {
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    @include mix.tablette {
+      font-size: 20px;
+      text-align: center;
+    }
+    @include mix.desktop {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 35px;
+      text-align: center;
+    }
+  }
+  .restaurants {
+    background-color: #f5f5f5;
+    margin-top: 73px;
+    padding-top: 20px;
+    @include mix.desktop {
+      width: 70%;
+      padding-top: 0px;
+    }
+
+    .artic-resto {
+      @include mix.local;
+      flex-direction: column;
+      padding-bottom: 40px;
+      @include mix.desktop {
+        @include mix.around;
+        flex-wrap: wrap;
+        flex-direction: initial;
+      }
+      .resto {
+        position: relative;
+        width: 90%;
+        border-radius: 30px;
+        margin-top: 25px;
+        box-shadow: 2px 0 19px 2px rgb(0 0 0 / 15%);
+        @include mix.tablette {
+          width: 80%;
+        }
+        @include mix.desktop {
+          width: 45%;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+          .nouveau {
+            @include mix.absolute;
+            left: 70%;
+            background: v.$tertiaire;
+            padding: 10px 17px;
+            color: green;
+            font-weight: bold;
+            @include mix.tablette {
+              @include mix.absolute;
+              left: 330px;
+              font-size: 20px;
+              top: 34px;
+            }
+            @include mix.desktop {
+              @include mix.absolute;
+              left: 60%;
+              font-size: 20px;
+              top: 34px;
+            }
+          }
+          .img-resto {
+            width: 100%;
+            border-radius: 30px 30px 0 0;
+            height: 330px;
+            @include mix.tablette {
+              height: 330px;
+            }
+            @include mix.desktop {
+              width: 99%;
+              margin: auto;
+              display: flex;
+              align-items: center;
+            }
+          }
+          .txt-txt {
+            @include mix.local;
+            justify-content: space-between;
+            .nom-restau {
+              padding-left: 20px;
+              font-weight: bold;
+              font-size: 23px;
+              margin-bottom: 0px;
+              @include mix.tablette {
+                font-size: 26px;
+              }
+              @include mix.desktop {
+                font-size: 20px;
+              }
+            }
+            .adresse {
+              padding-left: 20px;
+              font-size: 20px;
+              margin-top: 0px;
+              @include mix.desktop {
+              }
+            }
+            .fa-heart {
+              padding-right: 20px;
+              font-size: 20px;
+              @include mix.desktop {
+                font-size: 30px;
+              }
+              &:hover::before {
+                background: linear-gradient(#9356dc, #ff79da);
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
