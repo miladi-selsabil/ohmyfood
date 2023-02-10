@@ -1,60 +1,48 @@
 @use "../utils/mixin.scss" as mix;
 @use "../utils/variables.scss" as v;
 
-.ville{
-    margin-left: 15px;
-  }
- 
+header{
   .position{
     @include  mix.local;
-    @include  mix.centre;
+    justify-content: center;
     background-color: #DCDCDC;
     @include mix.tablette{
-      @include mix.size;      
+      font-size: 20px;
     }
     @include mix.desktop{
-      @include mix.size;
-      }
-      
-  }
-  h2{ @include mix.tablette{
-    @include mix.size;
-
-    
-  }
-  @include mix.desktop{
-    @include mix.size;
-
-    
+      font-size: 20px;
+    }
+    .ville{
+      margin-left: 15px;
     }
   }
   .reservation{
-  background-color: #F5F5F5;
-  @include mix.center;
-  padding: 20px;
-   .rese-texte{
-    font-size: 20px;
-    @include mix.center;
-    color: gray;
-    @include mix.tablette{
-      font-size: 22px;
-      
-    }
-    @include mix.desktop{
-      @include mix.size;
-      }
-   
-   } 
-    
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 20px;
     h2{
       max-width: 267px;
       display: inline-block;
-      @include mix.center;
+      text-align: center;
       font-size: 25px;
-      @include mix.desktop{
-          max-width: 100%;
-          font-size: 40px;
+      @include mix.tablette{
+        font-size: 20px;
       }
-  }
-
+      @include mix.desktop{
+      max-width: 100%;
+      font-size: 20px;
+      }
+    }
+     .rese-texte{
+      font-size: 20px;
+      text-align: center;
+      color: gray;
+      @include mix.tablette{
+        font-size: 22px; 
+      }
+      @include mix.desktop{
+        font-size: 20px;
+      }
+     } 
+    }
 }

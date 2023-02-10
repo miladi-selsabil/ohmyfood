@@ -8,16 +8,16 @@ footer{
     h4{
       font-family: 'Shrikhand', cursive; 
       font-weight: 100;
-      @include mix.size;
+      font-size: 20px;
       padding-left: 25px;
       padding-bottom: 15px;
       margin: 0px;
        @include mix.tablette{
-          @include mix.center;
+        text-align: center;
       }
       @include mix.desktop{
-          @include mix.center;
-          @include mix.size;
+       text-align: center;
+        font-size: 20px;
   
       }
       }
@@ -25,9 +25,9 @@ footer{
         margin-left: 25px;
         flex-direction: column;
         @include mix.tablette{
-          @include mix.around;
-          padding-top: 15px;
-          flex-direction: initial;
+        @include mix.around;
+        padding-top: 15px;
+        flex-direction: initial;
         }
         
         @include mix.desktop{
@@ -44,19 +44,18 @@ footer{
         }
           i{
     
-    font-size: 16px;
-    @include mix.desktop{
-      font-size: 25px;
-    }
-  }
+          font-size: 16px;
+          @include mix.desktop{
+            font-size: 25px;
+          }
+        }
       }
       .txt-footer{
         padding: 5px;
         font-size: 16px;
         margin: 0px;
         @include mix.tablette{
-          font-size: 20px;
-          
+        font-size: 20px; 
         }
         @include mix.desktop{
             font-size: 25px;

@@ -1,3 +1,5 @@
+@import "../utils/mixin.scss";
+@import "../utils/variables.scss";
 body {
     font-family: 'Roboto', sans-serif;
         margin: 0px !important ;
@@ -6,5 +8,42 @@ body {
   .container{
     margin: 0px auto;
     padding: 0;
-    animation: 600ms ease 0ms 1 normal both;
   }
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 2.75s, visibility 2.75s;
+    &::after {
+      content: "";
+      width: 75px;
+      height: 75px;
+      border: 15px solid #dddddd;
+      border-top-color: $primaire;
+      border-radius: 50%;
+      animation: loading 2.75s ease infinite;
+    }
+  }
+  
+  .loader--hidden {
+    opacity: 1;
+    visibility: hidden;
+  }
+  
+ 
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
