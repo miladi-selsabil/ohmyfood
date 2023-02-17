@@ -1,9 +1,32 @@
-
 @use "../utils/mixin.scss" as mix;
 @use "../utils/variables.scss" as v;
-h1{   text-align: center;}
+header {
+ 
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    width: 100%;
+    min-width: 320px;
+    padding: 21px 0px;
 
-h1 img{
-  width: 200px;
-  
+    img {
+      max-width: 168px;
+    }
+    .fa-arrow-left:before {
+      position: absolute;
+      left: 2rem;
+      height: 2rem;
+      width: 2rem;
+      top: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      color: #000;
+    }
+  }
 }

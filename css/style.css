@@ -35,12 +35,31 @@
   }
 }
 
-h1 {
-  text-align: center;
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  width: 100%;
+  min-width: 320px;
+  padding: 21px 0px;
 }
-
-h1 img {
-  width: 200px;
+header .logo img {
+  max-width: 168px;
+}
+header .logo .fa-arrow-left:before {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #000;
 }
 
 footer {
@@ -121,16 +140,12 @@ footer .txt-footer {
 
 .food-française {
   width: 100%;
-  height: 25vh;
-}
-@media only screen and (min-width: 992px) {
-  .food-française {
-    height: 60vh;
-  }
+  max-height: 250px;
+  object-fit: cover;
 }
 
 .main-deux {
-  height: 117vh;
+  height: 132vh;
   position: relative;
 }
 @media only screen and (min-width: 992px) {
@@ -235,57 +250,111 @@ footer .txt-footer {
   justify-content: space-between;
   background: white;
   border-radius: 13px;
-  padding: 3px;
-  width: 80%;
+  width: 350px;
+  height: 70px;
   font-size: 15px;
   margin-top: 20px;
   box-shadow: 0px 1px 9px grey;
-  padding: 8px 12px;
-}
-@media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr,
-  .main-deux .carte .plats .repas .ent-alfr,
-  .main-deux .carte .desserts .repas .ent-alfr {
-    width: 25%;
-  }
+  padding: 8px 0px 8px 8px;
+  overflow: hidden;
 }
 .main-deux .carte .entrees .repas .ent-alfr :nth-child(1),
 .main-deux .carte .plats .repas .ent-alfr :nth-child(1),
 .main-deux .carte .desserts .repas .ent-alfr :nth-child(1) {
   margin-top: 12px;
 }
-.main-deux .carte .entrees .repas .ent-alfr .nom-entree,
-.main-deux .carte .plats .repas .ent-alfr .nom-entree,
-.main-deux .carte .desserts .repas .ent-alfr .nom-entree {
+.main-deux .carte .entrees .repas .ent-alfr .header_menu,
+.main-deux .carte .plats .repas .ent-alfr .header_menu,
+.main-deux .carte .desserts .repas .ent-alfr .header_menu {
+  width: 230px;
+}
+.main-deux .carte .entrees .repas .ent-alfr .header_menu .nom-entree,
+.main-deux .carte .plats .repas .ent-alfr .header_menu .nom-entree,
+.main-deux .carte .desserts .repas .ent-alfr .header_menu .nom-entree {
   font-weight: bold;
-  margin: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 20px;
+  margin: 0px;
 }
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr .nom-entree,
-  .main-deux .carte .plats .repas .ent-alfr .nom-entree,
-  .main-deux .carte .desserts .repas .ent-alfr .nom-entree {
+  .main-deux .carte .entrees .repas .ent-alfr .header_menu .nom-entree,
+  .main-deux .carte .plats .repas .ent-alfr .header_menu .nom-entree,
+  .main-deux .carte .desserts .repas .ent-alfr .header_menu .nom-entree {
     font-size: 20px;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr .ingredients,
-.main-deux .carte .plats .repas .ent-alfr .ingredients,
-.main-deux .carte .desserts .repas .ent-alfr .ingredients {
+.main-deux .carte .entrees .repas .ent-alfr .header_menu .ingredients,
+.main-deux .carte .plats .repas .ent-alfr .header_menu .ingredients,
+.main-deux .carte .desserts .repas .ent-alfr .header_menu .ingredients {
   font-weight: 100;
   margin: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 20px;
 }
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr .ingredients,
-  .main-deux .carte .plats .repas .ent-alfr .ingredients,
-  .main-deux .carte .desserts .repas .ent-alfr .ingredients {
+  .main-deux .carte .entrees .repas .ent-alfr .header_menu .ingredients,
+  .main-deux .carte .plats .repas .ent-alfr .header_menu .ingredients,
+  .main-deux .carte .desserts .repas .ent-alfr .header_menu .ingredients {
     font-size: 20px;
   }
+}
+.main-deux .carte .entrees .repas .ent-alfr .confirmation,
+.main-deux .carte .plats .repas .ent-alfr .confirmation,
+.main-deux .carte .desserts .repas .ent-alfr .confirmation {
+  background-color: #99e2d0;
+  min-width: 4rem;
+  min-height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -90px;
+}
+.main-deux .carte .entrees .repas .ent-alfr .confirmation .circle,
+.main-deux .carte .plats .repas .ent-alfr .confirmation .circle,
+.main-deux .carte .desserts .repas .ent-alfr .confirmation .circle {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 100px;
+  background: #fff;
+  color: #99E2D0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  transition: transform 0.5s;
+}
+.main-deux .carte .entrees .repas .ent-alfr .confirmation .circle .fas,
+.main-deux .carte .plats .repas .ent-alfr .confirmation .circle .fas,
+.main-deux .carte .desserts .repas .ent-alfr .confirmation .circle .fas {
+  margin: auto;
+}
+.main-deux .carte .entrees .repas .ent-alfr:hover .confirmation,
+.main-deux .carte .plats .repas .ent-alfr:hover .confirmation,
+.main-deux .carte .desserts .repas .ent-alfr:hover .confirmation {
+  margin-right: 0px;
+  min-width: 4rem;
+  transition: margin-right 0.5s;
+}
+.main-deux .carte .entrees .repas .ent-alfr:hover .confirmation .circle,
+.main-deux .carte .plats .repas .ent-alfr:hover .confirmation .circle,
+.main-deux .carte .desserts .repas .ent-alfr:hover .confirmation .circle {
+  transform: rotate(360deg);
 }
 .main-deux .carte .entrees .repas .ent-alfr .prix,
 .main-deux .carte .plats .repas .ent-alfr .prix,
 .main-deux .carte .desserts .repas .ent-alfr .prix {
   font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+  font-weight: bold;
+  margin-right: 20px;
+  width: 25%;
 }
 @media only screen and (min-width: 992px) {
   .main-deux .carte .entrees .repas .ent-alfr .prix,
@@ -293,32 +362,6 @@ footer .txt-footer {
   .main-deux .carte .desserts .repas .ent-alfr .prix {
     font-size: 20px;
   }
-}
-.main-deux .carte .entrees .repas .ent-alfr:hover + .box,
-.main-deux .carte .plats .repas .ent-alfr:hover + .box,
-.main-deux .carte .desserts .repas .ent-alfr:hover + .box {
-  transform: scale(1);
-  transform: rotate(0deg);
-}
-.main-deux .carte .entrees .repas .ent-alfr:hover + .box   i.fas.fa-check-circle,
-.main-deux .carte .plats .repas .ent-alfr:hover + .box   i.fas.fa-check-circle,
-.main-deux .carte .desserts .repas .ent-alfr:hover + .box   i.fas.fa-check-circle {
-  transform: translateY(0);
-}
-.main-deux .carte .entrees .repas .ent-alfr .box,
-.main-deux .carte .plats .repas .ent-alfr .box,
-.main-deux .carte .desserts .repas .ent-alfr .box {
-  transform: scale(0.1);
-  transform: rotate(-90deg);
-  transition: transform 350ms ease-in-out;
-  overflow: hidden;
-}
-.main-deux .carte .entrees .repas .ent-alfr .box i.fas.fa-check-circle,
-.main-deux .carte .plats .repas .ent-alfr .box i.fas.fa-check-circle,
-.main-deux .carte .desserts .repas .ent-alfr .box i.fas.fa-check-circle {
-  display: block;
-  transform: translateY(250%);
-  transition: transform 280ms ease-out 450ms;
 }
 .main-deux .carte .entrees .entres-fr,
 .main-deux .carte .plats .entres-fr,
@@ -353,48 +396,33 @@ body {
   padding: 0;
 }
 
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  width: 100%;
+  min-width: 320px;
+  padding: 21px 0px;
+}
+
+header .logo img {
+  max-width: 168px;
+}
+
+header .logo .fa-arrow-left:before {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #333333;
-  transition: opacity 2.75s, visibility 2.75s;
-}
-
-.loader::after {
-  content: "";
-  width: 75px;
-  height: 75px;
-  border: 15px solid #dddddd;
-  border-top-color: #9356DC;
-  border-radius: 50%;
-  animation: loading 2.75s ease infinite;
-}
-
-.loader--hidden {
-  opacity: 1;
-  visibility: hidden;
-}
-
-@keyframes loading {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
-h1 {
-  text-align: center;
-}
-
-h1 img {
-  width: 200px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #000;
 }
 
 footer {
@@ -481,16 +509,12 @@ footer .txt-footer {
 }
 .food-française {
   width: 100%;
-  height: 25vh;
+  max-height: 250px;
+  object-fit: cover;
 }
 
-@media only screen and (min-width: 992px) {
-  .food-française {
-    height: 60vh;
-  }
-}
 .main-deux {
-  height: 117vh;
+  height: 132vh;
   position: relative;
 }
 
@@ -601,61 +625,121 @@ footer .txt-footer {
   justify-content: space-between;
   background: white;
   border-radius: 13px;
-  padding: 3px;
-  width: 80%;
+  width: 350px;
+  height: 70px;
   font-size: 15px;
   margin-top: 20px;
   box-shadow: 0px 1px 9px grey;
-  padding: 8px 12px;
+  padding: 8px 0px 8px 8px;
+  overflow: hidden;
 }
 
-@media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr,
-  .main-deux .carte .plats .repas .ent-alfr,
-  .main-deux .carte .desserts .repas .ent-alfr {
-    width: 25%;
-  }
-}
 .main-deux .carte .entrees .repas .ent-alfr :nth-child(1),
 .main-deux .carte .plats .repas .ent-alfr :nth-child(1),
 .main-deux .carte .desserts .repas .ent-alfr :nth-child(1) {
   margin-top: 12px;
 }
 
-.main-deux .carte .entrees .repas .ent-alfr .nom-entree,
-.main-deux .carte .plats .repas .ent-alfr .nom-entree,
-.main-deux .carte .desserts .repas .ent-alfr .nom-entree {
+.main-deux .carte .entrees .repas .ent-alfr .header_menu,
+.main-deux .carte .plats .repas .ent-alfr .header_menu,
+.main-deux .carte .desserts .repas .ent-alfr .header_menu {
+  width: 230px;
+}
+
+.main-deux .carte .entrees .repas .ent-alfr .header_menu .nom-entree,
+.main-deux .carte .plats .repas .ent-alfr .header_menu .nom-entree,
+.main-deux .carte .desserts .repas .ent-alfr .header_menu .nom-entree {
   font-weight: bold;
-  margin: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 20px;
+  margin: 0px;
 }
 
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr .nom-entree,
-  .main-deux .carte .plats .repas .ent-alfr .nom-entree,
-  .main-deux .carte .desserts .repas .ent-alfr .nom-entree {
+  .main-deux .carte .entrees .repas .ent-alfr .header_menu .nom-entree,
+  .main-deux .carte .plats .repas .ent-alfr .header_menu .nom-entree,
+  .main-deux .carte .desserts .repas .ent-alfr .header_menu .nom-entree {
     font-size: 20px;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr .ingredients,
-.main-deux .carte .plats .repas .ent-alfr .ingredients,
-.main-deux .carte .desserts .repas .ent-alfr .ingredients {
+.main-deux .carte .entrees .repas .ent-alfr .header_menu .ingredients,
+.main-deux .carte .plats .repas .ent-alfr .header_menu .ingredients,
+.main-deux .carte .desserts .repas .ent-alfr .header_menu .ingredients {
   font-weight: 100;
   margin: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 20px;
 }
 
 @media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr .ingredients,
-  .main-deux .carte .plats .repas .ent-alfr .ingredients,
-  .main-deux .carte .desserts .repas .ent-alfr .ingredients {
+  .main-deux .carte .entrees .repas .ent-alfr .header_menu .ingredients,
+  .main-deux .carte .plats .repas .ent-alfr .header_menu .ingredients,
+  .main-deux .carte .desserts .repas .ent-alfr .header_menu .ingredients {
     font-size: 20px;
   }
 }
+.main-deux .carte .entrees .repas .ent-alfr .confirmation,
+.main-deux .carte .plats .repas .ent-alfr .confirmation,
+.main-deux .carte .desserts .repas .ent-alfr .confirmation {
+  background-color: #99e2d0;
+  min-width: 4rem;
+  min-height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -90px;
+}
+
+.main-deux .carte .entrees .repas .ent-alfr .confirmation .circle,
+.main-deux .carte .plats .repas .ent-alfr .confirmation .circle,
+.main-deux .carte .desserts .repas .ent-alfr .confirmation .circle {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 100px;
+  background: #fff;
+  color: #99E2D0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  transition: transform 0.5s;
+}
+
+.main-deux .carte .entrees .repas .ent-alfr .confirmation .circle .fas,
+.main-deux .carte .plats .repas .ent-alfr .confirmation .circle .fas,
+.main-deux .carte .desserts .repas .ent-alfr .confirmation .circle .fas {
+  margin: auto;
+}
+
+.main-deux .carte .entrees .repas .ent-alfr:hover .confirmation,
+.main-deux .carte .plats .repas .ent-alfr:hover .confirmation,
+.main-deux .carte .desserts .repas .ent-alfr:hover .confirmation {
+  margin-right: 0px;
+  min-width: 4rem;
+  transition: margin-right 0.5s;
+}
+
+.main-deux .carte .entrees .repas .ent-alfr:hover .confirmation .circle,
+.main-deux .carte .plats .repas .ent-alfr:hover .confirmation .circle,
+.main-deux .carte .desserts .repas .ent-alfr:hover .confirmation .circle {
+  transform: rotate(360deg);
+}
+
 .main-deux .carte .entrees .repas .ent-alfr .prix,
 .main-deux .carte .plats .repas .ent-alfr .prix,
 .main-deux .carte .desserts .repas .ent-alfr .prix {
   font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+  font-weight: bold;
+  margin-right: 20px;
+  width: 25%;
 }
 
 @media only screen and (min-width: 992px) {
@@ -665,36 +749,6 @@ footer .txt-footer {
     font-size: 20px;
   }
 }
-.main-deux .carte .entrees .repas .ent-alfr:hover + .box,
-.main-deux .carte .plats .repas .ent-alfr:hover + .box,
-.main-deux .carte .desserts .repas .ent-alfr:hover + .box {
-  transform: scale(1);
-  transform: rotate(0deg);
-}
-
-.main-deux .carte .entrees .repas .ent-alfr:hover + .box   i.fas.fa-check-circle,
-.main-deux .carte .plats .repas .ent-alfr:hover + .box   i.fas.fa-check-circle,
-.main-deux .carte .desserts .repas .ent-alfr:hover + .box   i.fas.fa-check-circle {
-  transform: translateY(0);
-}
-
-.main-deux .carte .entrees .repas .ent-alfr .box,
-.main-deux .carte .plats .repas .ent-alfr .box,
-.main-deux .carte .desserts .repas .ent-alfr .box {
-  transform: scale(0.1);
-  transform: rotate(-90deg);
-  transition: transform 350ms ease-in-out;
-  overflow: hidden;
-}
-
-.main-deux .carte .entrees .repas .ent-alfr .box i.fas.fa-check-circle,
-.main-deux .carte .plats .repas .ent-alfr .box i.fas.fa-check-circle,
-.main-deux .carte .desserts .repas .ent-alfr .box i.fas.fa-check-circle {
-  display: block;
-  transform: translateY(250%);
-  transition: transform 280ms ease-out 450ms;
-}
-
 .main-deux .carte .entrees .entres-fr,
 .main-deux .carte .plats .entres-fr,
 .main-deux .carte .desserts .entres-fr {
@@ -766,48 +820,33 @@ body {
   padding: 0;
 }
 
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  width: 100%;
+  min-width: 320px;
+  padding: 21px 0px;
+}
+
+header .logo img {
+  max-width: 168px;
+}
+
+header .logo .fa-arrow-left:before {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #333333;
-  transition: opacity 2.75s, visibility 2.75s;
-}
-
-.loader::after {
-  content: "";
-  width: 75px;
-  height: 75px;
-  border: 15px solid #dddddd;
-  border-top-color: #9356DC;
-  border-radius: 50%;
-  animation: loading 2.75s ease infinite;
-}
-
-.loader--hidden {
-  opacity: 1;
-  visibility: hidden;
-}
-
-@keyframes loading {
-  from {
-    transform: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
-h1 {
-  text-align: center;
-}
-
-h1 img {
-  width: 200px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #000;
 }
 
 footer {
@@ -1187,6 +1226,7 @@ header .reservation .rese-texte {
 }
 .main .restaurants .artic-resto .resto a .img-resto {
   width: 100%;
+  object-fit: cover;
   border-radius: 30px 30px 0 0;
   height: 330px;
 }
@@ -1244,8 +1284,79 @@ header .reservation .rese-texte {
   }
 }
 .main .restaurants .artic-resto .resto a .txt-txt .fa-heart:hover::before {
-  background: linear-gradient(#9356dc, #ff79da);
+  color: green;
   cursor: pointer;
+}
+
+/*Loader*/
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #FFF;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  animation: loader 3s forwards;
+}
+
+/*Animation loader*/
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+.loader__circle {
+  border: 10px solid #F3F3F3;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 3s linear forwards;
+  /*Placement du loader au milieu de la page*/
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/*Animation du loader circle*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+/* Animation apparition */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.entrees {
+  animation: fadein 2s;
+}
+
+.plats {
+  animation: fadein 4s;
+}
+
+.desserts {
+  animation: fadein 6s;
 }
 
 /*# sourceMappingURL=style.css.map */
