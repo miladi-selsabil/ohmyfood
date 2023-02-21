@@ -1273,19 +1273,21 @@ header .reservation .rese-texte {
   margin-top: 0px;
 }
 
-.main .restaurants .artic-resto .resto a .txt-txt .fa-heart {
-  padding-right: 20px;
-  font-size: 20px;
+.main .restaurants .artic-resto .resto a .txt-txt .far {
+  color: black;
+  cursor: pointer;
+  font-size: 25px;
 }
 
-@media only screen and (min-width: 992px) {
-  .main .restaurants .artic-resto .resto a .txt-txt .fa-heart {
-    font-size: 30px;
-  }
-}
-.main .restaurants .artic-resto .resto a .txt-txt .fa-heart:hover::before {
-  color: green;
-  cursor: pointer;
+.main .restaurants .artic-resto .resto a .txt-txt .far:hover {
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 /*Loader*/
@@ -1297,7 +1299,7 @@ header .reservation .rese-texte {
   left: 0;
   top: 0;
   z-index: 10000;
-  animation: loader 3s forwards;
+  animation: loader 6s forwards;
 }
 
 /*Animation loader*/
@@ -1341,9 +1343,11 @@ header .reservation .rese-texte {
 /* Animation apparition */
 @keyframes fadein {
   0% {
+    transform: translateY(-5px);
     opacity: 0;
   }
   100% {
+    transform: translateY(1px);
     opacity: 1;
   }
 }
@@ -1352,7 +1356,7 @@ header .reservation .rese-texte {
 }
 
 .plats {
-  animation: fadein 4s;
+  animation: fadein 3s;
 }
 
 .desserts {
