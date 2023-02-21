@@ -8,21 +8,14 @@
   
 }
 .main-deux {
-  height: 132vh;
-  position: relative;
-  @include mix.desktop {
-    height: 105vh;
-  }
+ 
   .carte {
     border-radius: 57px 57px 0px 0px;
     background: #f5f5f5;
-    @include mix.absolute;
-    height: 50vh;
     width: 100%;
-    top: -75px;
-    @include mix.desktop {
-      position: relative;
-    }
+    margin-top: -80px;
+    position: relative;
+    
     .mil {
       @include mix.local;
       justify-content: space-between;
@@ -64,7 +57,6 @@
       }
       .repas {
         @include mix.local;
-        background: #f5f5f5;
         border-radius: 24px;
         display: flex;
         position: relative;
@@ -164,18 +156,7 @@
           }
         }
       }
-      .entres-fr {
-        padding: 15px 54px;
-        text-decoration: underline v.$tertiaire 25%;
-        margin-bottom: 0px;
-        @include mix.tablette {
-          font-size: 20px;
-        }
-        @include mix.desktop {
-          font-size: 20px;
-          text-align: center;
-        }
-      }
+      
     }
   }
 }

@@ -144,27 +144,12 @@ footer .txt-footer {
   object-fit: cover;
 }
 
-.main-deux {
-  height: 132vh;
-  position: relative;
-}
-@media only screen and (min-width: 992px) {
-  .main-deux {
-    height: 105vh;
-  }
-}
 .main-deux .carte {
   border-radius: 57px 57px 0px 0px;
   background: #f5f5f5;
-  position: absolute;
-  height: 50vh;
   width: 100%;
-  top: -75px;
-}
-@media only screen and (min-width: 992px) {
-  .main-deux .carte {
-    position: relative;
-  }
+  margin-top: -80px;
+  position: relative;
 }
 .main-deux .carte .mil {
   display: flex;
@@ -226,7 +211,6 @@ footer .txt-footer {
 .main-deux .carte .desserts .repas {
   display: flex;
   align-items: center;
-  background: #f5f5f5;
   border-radius: 24px;
   display: flex;
   position: relative;
@@ -361,28 +345,6 @@ footer .txt-footer {
   .main-deux .carte .plats .repas .ent-alfr .prix,
   .main-deux .carte .desserts .repas .ent-alfr .prix {
     font-size: 20px;
-  }
-}
-.main-deux .carte .entrees .entres-fr,
-.main-deux .carte .plats .entres-fr,
-.main-deux .carte .desserts .entres-fr {
-  padding: 15px 54px;
-  text-decoration: underline #99E2D0 25%;
-  margin-bottom: 0px;
-}
-@media only screen and (min-width: 768px) {
-  .main-deux .carte .entrees .entres-fr,
-  .main-deux .carte .plats .entres-fr,
-  .main-deux .carte .desserts .entres-fr {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .entres-fr,
-  .main-deux .carte .plats .entres-fr,
-  .main-deux .carte .desserts .entres-fr {
-    font-size: 20px;
-    text-align: center;
   }
 }
 
@@ -513,30 +475,14 @@ footer .txt-footer {
   object-fit: cover;
 }
 
-.main-deux {
-  height: 132vh;
-  position: relative;
-}
-
-@media only screen and (min-width: 992px) {
-  .main-deux {
-    height: 105vh;
-  }
-}
 .main-deux .carte {
   border-radius: 57px 57px 0px 0px;
   background: #f5f5f5;
-  position: absolute;
-  height: 50vh;
   width: 100%;
-  top: -75px;
+  margin-top: -80px;
+  position: relative;
 }
 
-@media only screen and (min-width: 992px) {
-  .main-deux .carte {
-    position: relative;
-  }
-}
 .main-deux .carte .mil {
   display: flex;
   align-items: center;
@@ -600,7 +546,6 @@ footer .txt-footer {
 .main-deux .carte .desserts .repas {
   display: flex;
   align-items: center;
-  background: #f5f5f5;
   border-radius: 24px;
   display: flex;
   position: relative;
@@ -747,29 +692,6 @@ footer .txt-footer {
   .main-deux .carte .plats .repas .ent-alfr .prix,
   .main-deux .carte .desserts .repas .ent-alfr .prix {
     font-size: 20px;
-  }
-}
-.main-deux .carte .entrees .entres-fr,
-.main-deux .carte .plats .entres-fr,
-.main-deux .carte .desserts .entres-fr {
-  padding: 15px 54px;
-  text-decoration: underline #99E2D0 25%;
-  margin-bottom: 0px;
-}
-
-@media only screen and (min-width: 768px) {
-  .main-deux .carte .entrees .entres-fr,
-  .main-deux .carte .plats .entres-fr,
-  .main-deux .carte .desserts .entres-fr {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .entres-fr,
-  .main-deux .carte .plats .entres-fr,
-  .main-deux .carte .desserts .entres-fr {
-    font-size: 20px;
-    text-align: center;
   }
 }
 .nos-restaurants {
