@@ -42,18 +42,19 @@
     .plats,
     .desserts {
       .entrees-fr {
-        text-decoration: underline v.$tertiaire 25%;
         margin-bottom: 0px;
         padding: 13px 30px;
-        text-underline-offset: 9px;
         @include mix.tablette {
           font-size: 20px;
-          text-align: center;
         }
         @include mix.desktop {
           font-size: 20px;
-          text-align: center;
-        }
+        }&::after {
+          content: "";
+          display: block;
+          width: 43px;
+          height: 3px;
+          background: v.$tertiaire;}
       }
       .repas {
         @include mix.local;
@@ -86,12 +87,11 @@
             font-weight: bold;
             text-overflow: ellipsis;
             white-space: nowrap;
-            font-size: 16px;
+            font-size: 18px;
             margin: 0px;
            
           }
           .ingredients {
-            font-weight: 100;
             margin: 0px;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -168,11 +168,10 @@
             align-items: flex-end;
             align-self: flex-end;
             font-weight: bold;
+            font-size: 18px;
             margin-right: 20px;
             width: 25%;
-            @include mix.desktop {
-              font-size: 20px;
-            }
+           
           }
         }
       }

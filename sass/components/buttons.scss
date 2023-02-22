@@ -5,13 +5,11 @@
     background: linear-gradient(v.$primaire, v.$secondaire  );
     padding: 15px;
     border-radius: 35px;
-    margin: 20px;
     display: block;
     margin: auto;
     border-color: #F5F5F5;
     border: 1px;
     margin-top: 15px;
-    margin-bottom: 15px;
     box-shadow: 0px 1px 6px grey; 
     transition: transform 400ms;
     @include mix.desktop{
@@ -24,6 +22,7 @@
      }
       a{
         text-decoration: none;
+        
         color: white;
         @include mix.tablette{
           font-size: 20px;

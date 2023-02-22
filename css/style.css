@@ -3,13 +3,11 @@
   background: linear-gradient(#9356DC, #FF79DA);
   padding: 15px;
   border-radius: 35px;
-  margin: 20px;
   display: block;
   margin: auto;
   border-color: #F5F5F5;
   border: 1px;
   margin-top: 15px;
-  margin-bottom: 15px;
   box-shadow: 0px 1px 6px grey;
   transition: transform 400ms;
 }
@@ -64,80 +62,34 @@ header .logo .fa-arrow-left:before {
   color: #000;
 }
 
+/*Footer*/
 footer {
-  background: #3a3a3a;
-  color: white;
-  padding: 30px 0px;
-}
-footer h4 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 100;
-  font-size: 20px;
-  padding-left: 25px;
-  padding-bottom: 15px;
-  margin: 0px;
-}
-@media only screen and (min-width: 768px) {
-  footer h4 {
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 992px) {
-  footer h4 {
-    text-align: center;
-    font-size: 20px;
-  }
-}
-footer .footer {
-  margin-left: 25px;
-  flex-direction: column;
-}
-@media only screen and (min-width: 768px) {
-  footer .footer {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
-    flex-direction: initial;
-  }
-}
-@media only screen and (min-width: 992px) {
-  footer .footer {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
-    flex-direction: initial;
-  }
-}
-footer .footer .footer-food {
+  background-color: #353535;
+  color: #FFF;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0px;
+  max-width: 100%;
+  min-width: 320px;
 }
-footer .footer .txt-footer {
-  margin: 0px;
-  padding-left: 15px;
+footer h3 {
+  margin: 0 0 10px 20px;
+  color: #e6e6e6;
+  font-weight: normal;
 }
-footer .footer i {
-  font-size: 16px;
+footer a {
+  text-decoration: none;
 }
-@media only screen and (min-width: 992px) {
-  footer .footer i {
-    font-size: 25px;
-  }
+footer a:hover {
+  text-decoration: underline;
+  color: #FFF;
 }
-footer .txt-footer {
-  padding: 5px;
-  font-size: 16px;
-  margin: 0px;
-}
-@media only screen and (min-width: 768px) {
-  footer .txt-footer {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  footer .txt-footer {
-    font-size: 25px;
-  }
+footer .footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .food-française {
@@ -187,17 +139,14 @@ footer .txt-footer {
 .main-deux .carte .entrees .entrees-fr,
 .main-deux .carte .plats .entrees-fr,
 .main-deux .carte .desserts .entrees-fr {
-  text-decoration: underline #99E2D0 25%;
   margin-bottom: 0px;
   padding: 13px 30px;
-  text-underline-offset: 9px;
 }
 @media only screen and (min-width: 768px) {
   .main-deux .carte .entrees .entrees-fr,
   .main-deux .carte .plats .entrees-fr,
   .main-deux .carte .desserts .entrees-fr {
     font-size: 20px;
-    text-align: center;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -205,8 +154,16 @@ footer .txt-footer {
   .main-deux .carte .plats .entrees-fr,
   .main-deux .carte .desserts .entrees-fr {
     font-size: 20px;
-    text-align: center;
   }
+}
+.main-deux .carte .entrees .entrees-fr::after,
+.main-deux .carte .plats .entrees-fr::after,
+.main-deux .carte .desserts .entrees-fr::after {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 3px;
+  background: #99E2D0;
 }
 .main-deux .carte .entrees .repas,
 .main-deux .carte .plats .repas,
@@ -256,13 +213,12 @@ footer .txt-footer {
   font-weight: bold;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0px;
 }
 .main-deux .carte .entrees .repas .ent-alfr .header_menu .ingredients,
 .main-deux .carte .plats .repas .ent-alfr .header_menu .ingredients,
 .main-deux .carte .desserts .repas .ent-alfr .header_menu .ingredients {
-  font-weight: 100;
   margin: 0px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -340,15 +296,9 @@ footer .txt-footer {
   align-items: flex-end;
   align-self: flex-end;
   font-weight: bold;
+  font-size: 18px;
   margin-right: 20px;
   width: 25%;
-}
-@media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr .prix,
-  .main-deux .carte .plats .repas .ent-alfr .prix,
-  .main-deux .carte .desserts .repas .ent-alfr .prix {
-    font-size: 20px;
-  }
 }
 
 body {
@@ -390,88 +340,40 @@ header .logo .fa-arrow-left:before {
   color: #000;
 }
 
+/*Footer*/
 footer {
-  background: #3a3a3a;
-  color: white;
-  padding: 30px 0px;
-}
-
-footer h4 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 100;
-  font-size: 20px;
-  padding-left: 25px;
-  padding-bottom: 15px;
-  margin: 0px;
-}
-
-@media only screen and (min-width: 768px) {
-  footer h4 {
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 992px) {
-  footer h4 {
-    text-align: center;
-    font-size: 20px;
-  }
-}
-footer .footer {
-  margin-left: 25px;
-  flex-direction: column;
-}
-
-@media only screen and (min-width: 768px) {
-  footer .footer {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
-    flex-direction: initial;
-  }
-}
-@media only screen and (min-width: 992px) {
-  footer .footer {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
-    flex-direction: initial;
-  }
-}
-footer .footer .footer-food {
+  background-color: #353535;
+  color: #FFF;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0px;
+  max-width: 100%;
+  min-width: 320px;
 }
 
-footer .footer .txt-footer {
-  margin: 0px;
-  padding-left: 15px;
+footer h3 {
+  margin: 0 0 10px 20px;
+  color: #e6e6e6;
+  font-weight: normal;
 }
 
-footer .footer i {
-  font-size: 16px;
+footer a {
+  text-decoration: none;
 }
 
-@media only screen and (min-width: 992px) {
-  footer .footer i {
-    font-size: 25px;
-  }
-}
-footer .txt-footer {
-  padding: 5px;
-  font-size: 16px;
-  margin: 0px;
+footer a:hover {
+  text-decoration: underline;
+  color: #FFF;
 }
 
-@media only screen and (min-width: 768px) {
-  footer .txt-footer {
-    font-size: 20px;
-  }
+footer .footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
-@media only screen and (min-width: 992px) {
-  footer .txt-footer {
-    font-size: 25px;
-  }
-}
+
 .food-française {
   width: 100%;
   max-height: 250px;
@@ -522,10 +424,8 @@ footer .txt-footer {
 .main-deux .carte .entrees .entrees-fr,
 .main-deux .carte .plats .entrees-fr,
 .main-deux .carte .desserts .entrees-fr {
-  text-decoration: underline #99E2D0 25%;
   margin-bottom: 0px;
   padding: 13px 30px;
-  text-underline-offset: 9px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -533,7 +433,6 @@ footer .txt-footer {
   .main-deux .carte .plats .entrees-fr,
   .main-deux .carte .desserts .entrees-fr {
     font-size: 20px;
-    text-align: center;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -541,9 +440,18 @@ footer .txt-footer {
   .main-deux .carte .plats .entrees-fr,
   .main-deux .carte .desserts .entrees-fr {
     font-size: 20px;
-    text-align: center;
   }
 }
+.main-deux .carte .entrees .entrees-fr::after,
+.main-deux .carte .plats .entrees-fr::after,
+.main-deux .carte .desserts .entrees-fr::after {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 3px;
+  background: #99E2D0;
+}
+
 .main-deux .carte .entrees .repas,
 .main-deux .carte .plats .repas,
 .main-deux .carte .desserts .repas {
@@ -595,14 +503,13 @@ footer .txt-footer {
   font-weight: bold;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0px;
 }
 
 .main-deux .carte .entrees .repas .ent-alfr .header_menu .ingredients,
 .main-deux .carte .plats .repas .ent-alfr .header_menu .ingredients,
 .main-deux .carte .desserts .repas .ent-alfr .header_menu .ingredients {
-  font-weight: 100;
   margin: 0px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -689,28 +596,20 @@ footer .txt-footer {
   align-items: flex-end;
   align-self: flex-end;
   font-weight: bold;
+  font-size: 18px;
   margin-right: 20px;
   width: 25%;
 }
 
-@media only screen and (min-width: 992px) {
-  .main-deux .carte .entrees .repas .ent-alfr .prix,
-  .main-deux .carte .plats .repas .ent-alfr .prix,
-  .main-deux .carte .desserts .repas .ent-alfr .prix {
-    font-size: 20px;
-  }
-}
 .nos-restaurants {
   background: linear-gradient(#9356DC, #FF79DA);
   padding: 15px;
   border-radius: 35px;
-  margin: 20px;
   display: block;
   margin: auto;
   border-color: #F5F5F5;
   border: 1px;
   margin-top: 15px;
-  margin-bottom: 15px;
   box-shadow: 0px 1px 6px grey;
   transition: transform 400ms;
 }
@@ -779,99 +678,49 @@ header .logo .fa-arrow-left:before {
   color: #000;
 }
 
+/*Footer*/
 footer {
-  background: #3a3a3a;
-  color: white;
-  padding: 30px 0px;
-}
-
-footer h4 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 100;
-  font-size: 20px;
-  padding-left: 25px;
-  padding-bottom: 15px;
-  margin: 0px;
-}
-
-@media only screen and (min-width: 768px) {
-  footer h4 {
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 992px) {
-  footer h4 {
-    text-align: center;
-    font-size: 20px;
-  }
-}
-footer .footer {
-  margin-left: 25px;
-  flex-direction: column;
-}
-
-@media only screen and (min-width: 768px) {
-  footer .footer {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
-    flex-direction: initial;
-  }
-}
-@media only screen and (min-width: 992px) {
-  footer .footer {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
-    flex-direction: initial;
-  }
-}
-footer .footer .footer-food {
+  background-color: #353535;
+  color: #FFF;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0px;
+  max-width: 100%;
+  min-width: 320px;
 }
 
-footer .footer .txt-footer {
-  margin: 0px;
-  padding-left: 15px;
+footer h3 {
+  margin: 0 0 10px 20px;
+  color: #e6e6e6;
+  font-weight: normal;
 }
 
-footer .footer i {
-  font-size: 16px;
+footer a {
+  text-decoration: none;
 }
 
-@media only screen and (min-width: 992px) {
-  footer .footer i {
-    font-size: 25px;
-  }
-}
-footer .txt-footer {
-  padding: 5px;
-  font-size: 16px;
-  margin: 0px;
+footer a:hover {
+  text-decoration: underline;
+  color: #FFF;
 }
 
-@media only screen and (min-width: 768px) {
-  footer .txt-footer {
-    font-size: 20px;
-  }
+footer .footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
-@media only screen and (min-width: 992px) {
-  footer .txt-footer {
-    font-size: 25px;
-  }
-}
+
 .nos-restaurants {
   background: linear-gradient(#9356DC, #FF79DA);
   padding: 15px;
   border-radius: 35px;
-  margin: 20px;
   display: block;
   margin: auto;
   border-color: #F5F5F5;
   border: 1px;
   margin-top: 15px;
-  margin-bottom: 15px;
   box-shadow: 0px 1px 6px grey;
   transition: transform 400ms;
 }
