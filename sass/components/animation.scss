@@ -73,15 +73,15 @@
     }
 }
 .entrees {
-    animation: fadein 2s;
+    animation: fadein 2s ease-in-out;
 
 
 }
 .plats {
-    animation: fadein 3s;
+    animation: fadein 3s ease-in-out;
 
    
 }
 .desserts {
-    animation: fadein 6s;
+    animation: fadein 6s ease-in-out;
 }
