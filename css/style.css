@@ -1,4 +1,14 @@
 @charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px !important;
+}
+
+.container {
+  margin: 0px auto;
+  padding: 0;
+}
+
 .nos-restaurants {
   background: linear-gradient(#9356DC, #FF79DA);
   padding: 15px;
@@ -8,6 +18,8 @@
   border-color: #F5F5F5;
   border: 1px;
   margin-top: 15px;
+  font-size: 18px;
+  color: white;
   box-shadow: 0px 1px 6px grey;
   transition: transform 400ms;
 }
@@ -19,20 +31,6 @@
 .nos-restaurants:hover {
   opacity: 0.6;
   transform: scale(1.15);
-}
-.nos-restaurants a {
-  text-decoration: none;
-  color: white;
-}
-@media only screen and (min-width: 768px) {
-  .nos-restaurants a {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .nos-restaurants a {
-    font-size: 24px;
-  }
 }
 
 header .logo {
@@ -610,6 +608,8 @@ footer .footer__logo {
   border-color: #F5F5F5;
   border: 1px;
   margin-top: 15px;
+  font-size: 18px;
+  color: white;
   box-shadow: 0px 1px 6px grey;
   transition: transform 400ms;
 }
@@ -624,21 +624,6 @@ footer .footer__logo {
   transform: scale(1.15);
 }
 
-.nos-restaurants a {
-  text-decoration: none;
-  color: white;
-}
-
-@media only screen and (min-width: 768px) {
-  .nos-restaurants a {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .nos-restaurants a {
-    font-size: 24px;
-  }
-}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0px !important;
@@ -721,6 +706,8 @@ footer .footer__logo {
   border-color: #F5F5F5;
   border: 1px;
   margin-top: 15px;
+  font-size: 18px;
+  color: white;
   box-shadow: 0px 1px 6px grey;
   transition: transform 400ms;
 }
@@ -735,21 +722,6 @@ footer .footer__logo {
   transform: scale(1.15);
 }
 
-.nos-restaurants a {
-  text-decoration: none;
-  color: white;
-}
-
-@media only screen and (min-width: 768px) {
-  .nos-restaurants a {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .nos-restaurants a {
-    font-size: 24px;
-  }
-}
 header .position {
   display: flex;
   align-items: center;
